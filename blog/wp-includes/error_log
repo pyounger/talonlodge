@@ -1,0 +1,1 @@
+[10-Mar-2017 19:27:12 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/talonlod/public_html/blog/wp-includes/rss-functions.php on line 8

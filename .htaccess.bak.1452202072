@@ -1,0 +1,82 @@
+# Use PHP5.4 as default
+AddHandler application/x-httpd-php54 .php
+# Turn indexes off
+#Options All -Indexes
+
+# Error documents
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+
+<IfModule mod_alias.c>
+# Deny access to SVN files if any using mod_alias
+RedirectMatch 404 /\\.svn(/|$)
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# Custom redirects
+
+#redirect 301 /guests/ http://
+#redirect 301 /terms-of-use/	http://www.talonlodge.com/terms-of-service/
+#redirect 301 /gallery/people/	http://www.talonlodge.com/
+#redirect 301 /video/	http://www.talonlodge.com/gallery/
+#redirect 301 /reservation/2015-june-10-15-5-nights-4-days-sportfishing/	http://www.talonlodge.com/reservation/
+#redirect 301 /reservation/2013-june-20-24-visiting-winemaker-series/	http://www.talonlodge.com/reservation/
+#redirect 301 /cuisine/	http://www.talonlodge.com/cuisine-events/
+#redirect 301 /a/	http://www.talonlodge.com/
+#redirect 301 /flash/gallery_v1.swf/	http://www.talonlodge.com/
+#redirect 301 /MOKOZ/team-talon-positions/	http://www.talonlodge.com/
+#redirect 301 /UmWVZ/	http://www.talonlodge.com/
+#redirect 301 /VYfWZ/	http://www.talonlodge.com/
+#redirect 301 /NeUYZ/	http://www.talonlodge.com/
+#redirect 301 /RTmTZ/spa/	http://www.talonlodge.com/
+#redirect 301 /VhTiZ/contact-us/	http://www.talonlodge.com/
+#redirect 301 /flash/talon_flash_04.swf/	http://www.talonlodge.com/
+#redirect 301 /MWjQZ/	http://www.talonlodge.com/
+#redirect 301 /reservation/2012-aug-21-25-4-nights-3-days-of-sportfishing-/	http://www.talonlodge.com/reservation/
+#redirect 301 /terms.asp/	http://www.talonlodge.com/terms-of-service/
+#redirect 301 /SZXXZ/talon-service/	http://www.talonlodge.com/terms-of-service/
+#redirect 301 /reserve/	http://www.talonlodge.com/reservation/
+#redirect 301 /OlVKZ/	http://www.talonlodge.com/
+#redirect 301 /WoTYZ/	http://www.talonlodge.com/
+#redirect 301 /ZmPWZ/faq/	http://www.talonlodge.com/
+#redirect 301 /ORlZZ/alaska-fishing-trips/	http://www.talonlodge.com/fishing/
+#redirect 301 /POWcZ/UiWXZ/treatment-menu/	http://www.talonlodge.com/treatment-menu/
+#redirect 301 /RKXkZ/talon-lodge-shop/	http://www.talonlodge.com/talon-lodge-shop/
+#redirect 301 /TUZYZ/	http://www.talonlodge.com/
+#redirect 301 /OMkoZ/talon-service/	http://talonlodge.com/talon-service/
+#redirect 301 /VpPcZ/	http://www.talonlodge.com/
+#redirect 301 /OamWZ/guides-and-gear/	http://talonlodge.com/guides-and-gear/
+#redirect 301 /XoXPZ/NKTVZ/	http://www.talonlodge.com/
+#redirect 301 /ONXZZ/	http://www.talonlodge.com/
+#redirect 301 /VVSQZ/NYneZ/contact-us/	http://talonlodge.com/contacts/
+#redirect 301 /QidjZ/contacts/	http://talonlodge.com/contacts/
+#redirect 301 /YmQnZ/~talonlod/	http://www.talonlodge.com/
+#redirect 301 /OROmZ/lodge-accommodations/	http://www.talonlodge.com/lodge-accommodations/
+#redirect 301 /static/flash/index.html	http://www.talonlodge.com/
+
+#Captcha
+RewriteRule ^captcha\/([0-9]+)/?$ captcha.php [L]
+
+RewriteCond %{HTTP_HOST} !^www.(.*)$
+RewriteRule (.*) http://www.%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+# CSS & JavaScript gzipping using assets
+RewriteRule ^asset-(.*?)\.v(.*?)\.(css|js)$ gzipit.php?asset=$1 [L]
+
+# Fixing trailing slash
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Optional ignore pattern for file not existing on disk
+RewriteCond %{REQUEST_URI} !generated-file-from-script.gif
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1/ [L,R=301]
+
+# Catch-all rule
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
+
+</IfModule>

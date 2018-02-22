@@ -1,0 +1,36 @@
+# Turn indexes off
+# For security reasons, Option all cannot be overridden.
+#Options All -Indexes
+Options ExecCGI Includes IncludesNOEXEC SymLinksIfOwnerMatch -Indexes
+
+# Error documents
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+
+<IfModule mod_alias.c>
+# Deny access to SVN files if any using mod_alias
+RedirectMatch 404 /\\.svn(/|$)
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+#Captcha
+RewriteRule ^captcha\/([0-9]+)/?$ captcha.php [L]
+
+# CSS & JavaScript gzipping using assets
+RewriteRule ^asset-(.*?)\.v(.*?)\.(css|js)$ gzipit.php?asset=$1 [L]
+
+# Fixing trailing slash
+RewriteCond %{REQUEST_FILENAME} !-f
+# Optional ignore pattern for file not existing on disk
+# RewriteCond %{REQUEST_URI} !generated-file-from-script.gif
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1/ [L,R=301]
+
+# Catch-all rule
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
+</IfModule>

@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<base href="{$cpf_root_url}" />        
+	<title>{block name='title'}{/block}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="generator" content="hands :)" /> 
+	<meta name="description" content="{block name='description'}{/block}" /> 
+	<meta name="keywords" content="{block name='keywords'}{/block}" /> 
+	<link rel="canonical" href="{$cpf_canonical_url}" />
+	<meta name="revisit-after" content="1 Day" /> 
+	<meta name="robots" content="{block name='robots'}{/block}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
+    <link type="text/css" href="asset-css-frontend.v{$cpf_assets_version}.css" rel="stylesheet"  media="screen" />
+    <script type="text/javascript" src="asset-js-frontend.v{$cpf_assets_version}.css"></script>
+    {if $web == "bluffhouse"}<link rel="stylesheet" type="text/css" href="/responsive.css">{/if}
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/complete-responsive.css">
+    {if $recipe}
+    <meta property="og:title" content="{$recipe->title}"/> 
+    <meta property="og:description" content="{$recipe->direction}"/> 
+    <meta property="og:image" content="{cpf_config('APP.RECIPES.URL')}{$recipe->filename_thumb}"/> 
+    <meta property="og:site_name" content="Talon Lodge"/> 
+    {/if}
+
+<script type="text/javascript"> 
+		//Global language variable for javascript
+		LANG = 'en';
+		CMT = false;
+		
+		SMARTPHONE = false;
+		TABLET = false;
+		MAPDATA = '/poi';
+			</script>
+    <script type="text/javascript">
+       
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-3585651-1']);
+     _gaq.push(['_trackPageview']);
+     
+     (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  
+</script>	
+
+{include file='includes/frontend.chat.tpl'}
+
+
+<style>
+    .aa{
+        color:#fff;
+        background: #000;
+    }
+    
+    html, body{
+        height: auto!important;
+    }
+    
+    .b-reservation-view-l>p{
+        width: 350px;
+    }
+    
+    .span-f{
+        color:#fff!important;
+        font-size: 78px;    
+        line-height: 3.875rem;    
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    .span-s{
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        color:#fff!important;
+        font-size: 36px;
+        line-height: 1.84375rem;
+        padding-left: 5px;
+    }
+    .span-t{
+        color:#fff!important;
+        display: block;
+        padding-left: 5px;
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+        text-transform: lowercase;
+    }
+    .l-center-layer{
+        height: 225px;  
+    }
+    
+
+    
+</style>
+
+
+</head>
+<body class="controller-{$cpf_controller} action-{$cpf_action} home">
+
+  <div id="masthead-vid" class="video-masthead-vid" style="position: relative;">
+			<video width="100%" preload="auto" autoplay loop muted>
+            <source src="https://player.vimeo.com/external/184031995.hd.mp4?s=32fdc4894d12de802841c7bb3515fb08ba9ef4aa&profile_id=174&autoplay=1&loop=1"/>
+           
+            </video>
+			<img src="http://www.maunalani.com/templates/main/images/buttons/btn-video-play.png" id="playvid" style="position:absolute;top:50%;left:50%; z-index:9999999999;">
+			<div id="videostill"></div>
+			</div>
+
+    
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+			<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+    <script src="http://media.sabrecdn.com/maunalani_com/templates/main/js/modernizr-2.6.1.min.js"></script>			
+			<script src="http://media.sabrecdn.com/maunalani_com/templates/main/js/main.js"></script>           
+			
+			<script src="http://media.sabrecdn.com/maunalani_com/templates/main/js/special.js?v=9"></script>
+			<script src="http://media.sabrecdn.com/maunalani_com/templates/main/js/jqModal.js"></script>
+
+    
+</body>
+</html>

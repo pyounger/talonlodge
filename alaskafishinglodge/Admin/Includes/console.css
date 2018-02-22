@@ -1,0 +1,140 @@
+.body
+{
+	background-color :#7b79ad;
+	margin :0px;
+	 
+	}
+
+
+A:link {
+	COLOR: #3b378c; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #cfcfcf; TEXT-DECORATION: none
+}
+TD {
+	FONT-SIZE: 12px; COLOR: #555555; FONT-FAMILY: Arial, Helvetica, sans-serif;
+    margin-left: 40px;
+}
+BODY {
+	FONT-SIZE: 12px; COLOR: #555555; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+TD.menuWhite {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.menuWhite {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.menuWhite:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.menuWhite:hover {
+	COLOR: #f8c701; TEXT-DECORATION: none
+}
+TD.textWhite {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.textWhite {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.textWhite:visited {
+	COLOR: #ffffff
+}
+A.textWhite:hover {
+	COLOR: #f8c701
+}
+.textBig {
+	FONT-SIZE: 18px; COLOR: #555555; LINE-HEIGHT: 17px; FONT-STYLE: normal; FONT-FAMILY: arial, helvetica
+}
+.textSmall {
+	FONT-SIZE: 9px; COLOR: #555555; LINE-HEIGHT: 10px; FONT-STYLE: normal; FONT-FAMILY: arial, helvetica
+}
+.red {
+	COLOR: #e40000
+	
+	
+}
+TD.tableTitle {
+	PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; COLOR: #ffffff; PADDING-TOP: 2px; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.tableTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: tahoma, Helvetica, sans-serif
+}
+A.tableTitle:visited {
+	COLOR: #ffffff
+}
+A.tableTitle:hover {
+	COLOR: #f8c701
+}
+.cartTableHeader {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 2px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 12px; PADDING-BOTTOM: 4px; BORDER-LEFT: #888888 0px solid; COLOR: #ffffff; PADDING-TOP: 1px; BORDER-BOTTOM: #888888 0px solid; FONT-FAMILY: tahoma, Helvetica, sans-serif; BACKGROUND-COLOR: #888888
+}
+TD.tableHeader {
+	PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; COLOR: #555555; PADDING-TOP: 2px; BORDER-BOTTOM: #888888 1px solid; FONT-STYLE: normal; FONT-FAMILY: tahoma, Helvetica, sans-serif
+}
+TD.tableLabel {
+	BORDER-RIGHT: #e1e1e1 1px solid; BORDER-TOP: #e1e1e1 0px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; BORDER-LEFT: #e1e1e1 1px solid; COLOR: #555555; PADDING-TOP: 3px; BORDER-BOTTOM: #c0c0c0 1px solid; FONT-FAMILY: tahoma, Helvetica, sans-serif
+}
+A.tableLabel {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #555555; FONT-FAMILY: tahoma, Helvetica, sans-serif
+}
+A.tableLabel:visited {
+	COLOR: #555555
+}
+A.tableLabel:hover {
+	COLOR: #3b378c
+}
+TD.tableRow {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; COLOR: #000000; PADDING-TOP: 3px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+TD.button {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffffff',EndColorStr='#7B79AD'); PADDING-BOTTOM: 3px; BORDER-LEFT: #000000 1px solid; CURSOR: hand; PADDING-TOP: 3px; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #7b79ad
+}
+TD.buttonHover {
+	BORDER-RIGHT: #c70000 1px solid; BORDER-TOP: #c70000 1px solid; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffffff',EndColorStr='#7B79AD'); PADDING-BOTTOM: 3px; BORDER-LEFT: #c70000 1px solid; CURSOR: hand; PADDING-TOP: 3px; BORDER-BOTTOM: #c70000 1px solid; BACKGROUND-COLOR: #cccccc
+}
+TD.buttonDown {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ABA9DF',EndColorStr='#474576'); PADDING-BOTTOM: 3px; BORDER-LEFT: #000000 1px solid; CURSOR: hand; PADDING-TOP: 3px; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #999999
+}
+A.buttonLink {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: tahoma, arial, helvetica; TEXT-DECORATION: none
+}
+A.buttonLink:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.buttonLink:hover {
+	COLOR: #52515e; TEXT-DECORATION: none
+}
+#logIn {
+	BORDER-RIGHT: #000 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 17px; MARGIN: 5px 0px; BORDER-LEFT: #000 1px solid; WIDTH: 360px; PADDING-TOP: 5px; BORDER-BOTTOM: #000 1px solid
+}
+#logIn .text {
+	BORDER-RIGHT: #000 1px solid; BORDER-TOP: #000 1px solid; FONT: 500 13px Verdana, Geneva, Arial, Helvetica, sans-serif; BORDER-LEFT: #000 1px solid; WIDTH: 250px; COLOR: #000; BORDER-BOTTOM: #000 1px solid; BACKGROUND-COLOR: white
+}
+#logIn .required {
+	MARGIN: 0px 0px 0px 105px; FONT: 12px Verdana, Geneva, Arial, Helvetica, sans-serif; COLOR: #ff0000
+}
+#logIn #label {
+	MARGIN: 0px 0px 0px 15px; FONT: 500 12px Verdana, Geneva, Arial, Helvetica, sans-serif; VERTICAL-ALIGN: text-top
+}
+#logIn INPUT.submit {
+	VERTICAL-ALIGN: bottom; HEIGHT: 21px
+}
+.formText {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: tahoma, Helvetica, sans-serif; BACKGROUND-COLOR: #fafafa
+}
+.formSelect {
+	FONT-SIZE: 12px; FONT-FAMILY: tahoma, Helvetica, sans-serif; BACKGROUND-COLOR: #fafafa
+}
+.submitButton {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: tahoma, Helvetica, sans-serif
+}
+.errorsMsg {
+	BORDER-RIGHT: #c60000 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #c60000 1px solid; PADDING-LEFT: 40px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 4px; MARGIN: 9px 6px; BORDER-LEFT: #c60000 1px solid; COLOR: #000; PADDING-TOP: 4px; BORDER-BOTTOM: #c60000 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffecec; TEXT-ALIGN: left
+}
+.errorsMsg .title {
+	FONT-WEIGHT: bold
+}
+.errorsMsg .details {
+	MARGIN: 5px 0px 5px 26px;
+}

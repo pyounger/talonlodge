@@ -1,0 +1,6 @@
+[08-Dec-2014 03:03:33 America/Denver] PHP Notice:  Use of undefined constant DOCUMENT_ROOT - assumed 'DOCUMENT_ROOT' in /home2/talonlod/public_html/_old/500.php on line 12
+[08-Dec-2014 03:03:33 America/Denver] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /home2/talonlod/public_html/_old/500.php on line 12
+[18-Aug-2015 21:33:00 America/Denver] PHP Notice:  Use of undefined constant DOCUMENT_ROOT - assumed 'DOCUMENT_ROOT' in /home2/talonlod/public_html/_old/500.php on line 12
+[18-Aug-2015 21:33:00 America/Denver] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /home2/talonlod/public_html/_old/500.php on line 12
+[08-May-2016 03:13:06 America/Denver] PHP Notice:  Use of undefined constant DOCUMENT_ROOT - assumed 'DOCUMENT_ROOT' in /home2/talonlod/public_html/_old/500.php on line 12
+[08-May-2016 03:13:06 America/Denver] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /home2/talonlod/public_html/_old/500.php on line 12
