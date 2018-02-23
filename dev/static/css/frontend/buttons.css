@@ -1,0 +1,42 @@
+/* Button */
+
+.h-sidebar-button
+	{
+	margin: 10px 0 10px 27px;
+	}
+.b-button
+	{
+	display: inline-block; zoom: 1; *display: inline;	
+	height: 25px;
+	overflow: visible;					
+	background: transparent;
+	border: none;
+	
+	text-align: center;	
+	text-decoration: none;
+	white-space: nowrap;		
+	}	
+	.b-button span, .b-button em 
+		{ 
+		font-family: "Times New Roman";
+		cursor: pointer; 
+		}
+	.b-button span
+		{
+		display: block;
+		height: 27px;
+		padding: 0 15px 0 0;
+		background: transparent url('static/images/frontend/buttons/button-content-r.png') right top no-repeat;
+		}
+		.b-button span em
+			{
+			display: block;
+			padding: 5px 0 0 15px;
+			height: 23px;
+			background: transparent url('static/images/frontend/buttons/button-content-l.png') left top no-repeat;
+			color: white;
+			font-size: 1.4em;
+			font-style: italic;
+			}
+	.b-button:hover span {background-position: right -29px; }	
+	.b-button:hover span em {background-position: left -29px; }			

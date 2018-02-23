@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'BalticaItalic';
+    src: url('/static/fonts/11477-webfont.eot');
+    src: url('/static/fonts/11477-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/11477-webfont.woff') format('woff'),
+         url('/static/fonts/11477-webfont.ttf') format('truetype'),
+         url('/static/fonts/11477-webfont.svg#BalticaItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'BalticaPlain';
+    src: url('/static/fonts/11538_1-webfont.eot');
+    src: url('/static/fonts/11538_1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/11538_1-webfont.woff') format('woff'),
+         url('/static/fonts/11538_1-webfont.ttf') format('truetype'),
+         url('/static/fonts/11538_1-webfont.svg#BalticaPlain') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}
+
+.baltica-plain
+	{
+	font-family: 'BalticaPlain';
+	}
+.baltica-italic
+	{
+	font-family: 'BalticaItalic';
+	}

@@ -1,0 +1,546 @@
+ /* Subheader */
+.l-subheader
+	{
+	position: relative;
+	min-width: 980px;
+	}
+.h-content-navigation
+	{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+	}
+	.h-content-navigation-left
+		{
+		padding: 0 0 0 28px;
+		background: url('static/images/frontend/menu/bg-content-navigation-l.png') left top no-repeat;
+		}
+		.h-content-navigation-right
+			{
+			padding: 0 28px 0 0;
+			background: url('static/images/frontend/menu/bg-content-navigation-r.png') right top no-repeat;
+			}
+			.h-content-navigation-center
+				{
+				padding: 0 0 0 19px;
+				height: 39px;
+				background: url('static/images/frontend/menu/bg-content-navigation-1px.png') left top repeat-x;
+				}
+				.h-content-navigation-center ul 
+					{
+					overflow: hidden;
+					}
+					.h-content-navigation-center ul li
+						{
+						float: left;
+						margin: 0 0 0 10px;
+						list-style: none;
+						}
+					.h-content-navigation-center ul li.first { margin-left: 0; }
+						.h-content-navigation-center ul li a
+							{
+							padding: 0 13px 0 0;
+							display: block;
+							font-family: "Times New Roman";
+							font-size: 1.3em;
+							color: white;
+							text-decoration: none;
+							}
+							.h-content-navigation-center ul li a em
+								{
+								height: 30px;
+								padding: 10px 0 0 13px;
+								display: block;
+								font-style: normal;
+								text-transform: uppercase;
+								cursor: pointer;
+								}
+								.h-content-navigation-center ul li a:hover,
+								.h-content-navigation-center ul li a.active
+									{
+									cursor: pointer;
+									}
+								.h-content-navigation-center ul li a:hover em,
+								.h-content-navigation-center ul li a.active em
+									{
+									cursor: pointer;
+									text-decoration: underline;
+									}
+	.b-slidedown
+		{
+		display: none;
+		position: absolute;
+		top: 80px;
+		z-index: -5;
+		width: 370px;		
+		}
+		.b-slidedown .b-nipple
+			{
+			width: 12px;
+			height: 6px;
+			background: url('static/images/frontend/new_layout/header/bg-nipple.png') left top no-repeat;
+			}
+		.b-slidedown-inner
+			{
+			padding: 0 6px;
+			background: white;
+			border-bottom: 4px solid #a93102;
+			}
+			.b-slidedown-inner-l
+				{
+				padding: 0 0 0 15px;
+				}
+				.b-slidedown-inner-r
+					{
+					padding: 0 15px 0 0;
+					}
+					.b-slidedown-inner-r a
+						{
+						background: url('static/images/frontend/new_layout/header/bg-arrow.png') left -9999px no-repeat;
+						}
+					.b-slidedown-inner-r a:hover
+						{
+						background: url('static/images/frontend/new_layout/header/bg-arrow.png') left 7px no-repeat;
+						}
+		.b-slidedown-bottom-l
+			{
+			display: none;
+			padding: 0 0 0 5px;
+			height: 2px;
+			background: #a93102;
+			}
+			.b-slidedown-bottom-r
+				{
+				margin: 0 2px 0 0;
+				padding: 0 5px 0 0;
+				background: transparent url('static/images/frontend/slidedown/bg-content-slidedown-br.png') right bottom no-repeat;
+				}
+				.b-slidedown-bottom-c
+					{
+					height: 6px;
+					background: transparent url('static/images/frontend/slidedown/bg-content-slidedown-bc.png') bottom repeat-x;
+					}
+		.b-submenu-1 { margin: 0 0 0 35px; }
+			.b-submenu-1 .b-nipple { margin: 0 0 0 31px; }
+		.b-submenu-2 { margin: 0 0 0 80px; }
+			.b-submenu-2 .b-nipple { margin: 0 0 0 75px; }
+		.b-submenu-3 { margin: 0 0 0 180px; }
+			.b-submenu-3 .b-nipple { margin: 0 0 0 95px; }
+		.b-submenu-4 { margin: 0 0 0 280px; }
+			.b-submenu-4 .b-nipple { margin: 0 0 0 130px; }
+		.b-submenu-5 { margin: 0 0 0 439px; }
+			.b-submenu-5 .b-nipple { margin: 0 0 0 61px; }
+		.b-submenu-6 { margin: 0 0 0 437px; }
+			.b-submenu-6 .b-nipple { margin: 0 0 0 167px; }
+		.b-submenu-7 { margin: 0 0 0 438px; }
+			.b-submenu-7 .b-nipple { margin: 0 0 0 305px; }
+		.b-submenu-8 { margin: 0 0 0 650px; }
+			.b-submenu-8 .b-nipple { margin: 0 0 0 40px; }
+				
+			.b-about-us p,
+			.b-slidedown p
+				{
+				padding: 10px 0;
+				font-family: Times;
+				font-size: 14px;
+				font-style: italic;
+				color: #332a1f;
+				}
+			.b-about-us-inner
+				{
+				padding: 19px 0 0 0;
+				overflow: hidden;
+				}
+				.b-about-us-inner img
+					{
+					}
+					.b-slidedown-submenu-image
+						{
+						position: relative;
+						float: left;
+						}
+						.b-slidedown-submenu-image .overlay
+							{
+							position: absolute;
+							left: 0;
+							top: 0;
+							width: 193px;
+							height: 118px;
+							}
+				.b-about-us-inner ul
+					{
+					
+					float: left;
+					margin: 5px 0 0 10px;
+					list-style: none;
+					}
+					.b-about-us-inner ul li
+						{
+						}
+						.b-about-us-inner ul li a
+							{
+							padding: 3px 0 0 12px;
+							display: block;
+							width: 110px;
+							color: #332a1f;
+							text-decoration: none;
+							font-size: 14px!important;
+							font-family: Georgia;
+							text-transform: none;
+							}
+						.b-about-us-inner ul.wide li a
+							{
+							width: auto;
+							}
+						.b-about-us-inner ul li a:hover, .b-about-us-inner ul li a.active
+							{
+							color: #a93102;
+							}											
+
+/* 
+	Gallery 
+*/
+		.b-gallery
+			{
+			position: relative;
+			overflow: hidden;
+			top: -10px;
+			}
+			.b-gallery-container
+				{
+				background: black;
+				height: 600px;
+				}
+				.b-gallery-container,
+				.b-gallery-container ul, 
+				.b-gallery-container ul li
+					{
+					width: 100%;
+					}
+				
+			.b-gallery .l-center
+				{
+				position: relative;
+				width: 980px;
+				margin: 0px auto;
+				height: 100%;
+				}
+				.l-center-layer
+					{
+					position: absolute;
+					width: 100%;
+					}
+				.l-center-layer.title
+					{
+					right: 0;
+					bottom: 200px;
+					z-index: 100;
+					}
+				.l-center-layer.subtitle
+					{
+					right: 0;
+					bottom: 100px;
+					}
+				.b-gallery-title
+					{
+					float: right;
+					padding: 15px 20px 15px 20px;
+					width: 80%;
+					color: white;
+					font: normal 3.3em "BalticaPlain";
+					text-align: right;
+					}
+					.shadow
+						{
+						filter: glow(color=#000000,strength=3);
+						}
+					.even .b-gallery-title
+						{
+						float: right;
+						text-align: right;
+						}
+                    .left .b-gallery-title
+                        {
+                        float: left;
+                        text-align: left;
+                        }
+                    .center .b-gallery-title
+                        {
+/*                        float: right;*/
+                        text-align: center;
+                        }
+                    .right .b-gallery-title
+                        {
+                        float: right;
+                        text-align: right;
+                        }
+				.l-center-layer.menu
+					{
+					bottom: 60px;
+					height: 20px;
+					z-index: 100;
+					}
+				.b-gallery-menu
+					{
+					position: relative;
+					right: 50%;
+					float: right;
+					}
+					.b-gallery-menu .i
+						{
+						position: relative;
+						right: -50%;
+						height: 20px;
+						padding: 0 30px 0 0;
+						}
+						.b-gallery-menu .i span
+							{
+							display: block;
+							height: 20px;
+							padding: 0 0 0 40px;
+							font-size: 1.5em;
+							text-transform: uppercase;
+							text-shadow: 1px 1px #aec9c6;
+							}
+							.b-gallery-menu ul
+								{
+								list-style: none;
+								overflow: hidden;
+								}
+								.b-gallery-menu ul li
+									{
+									float: left;
+									padding: 0 5px 0 0;
+									}
+									.b-gallery-menu ul li a
+										{
+										display: block;
+										width: 15px;
+										height: 20px;
+										background: url('static/images/frontend/gallery/gallery-menu-sprite.png') left top no-repeat;
+										text-decoration: none;
+										text-indent: -9999px;
+										}
+									.b-gallery-menu ul li.photo a { background-position: -20px top; }
+									.b-gallery-menu ul li.photo a.active,
+									.b-gallery-menu ul li.photo a:hover 
+										{ background-position: left top; }
+/* booking form */
+		.h-image-bottom
+			{
+			position: absolute;
+			bottom: 0;
+			/*overflow: hidden;*/
+			padding: 10px 0 0 0;
+			height: 50px;
+			width: 100%;
+			}
+			.h-image-bottom-wrapper
+				{
+				padding: 0 2px 0 0;
+				width: 980px;
+				}
+			.h-image-bottom div
+				{
+				/*overflow: hidden;*/
+				}
+			.h-image-bottom div form.order-form
+				{
+				/*overflow: hidden;*/
+				float: left;
+				}
+			.h-image-bottom-i
+				{
+				margin: 7px 0 0 0;
+				}
+			.b-image-bottom-title
+				{
+				margin: 14px 0 0 0;
+				float: left;
+				height: 18px;
+				width: 175px;
+				color: white;
+				font-size: 14px;
+				font-weight: bold;
+				text-transform: uppercase;
+				}
+				.b-image-bottom-datepick
+					{
+					float: left;
+					padding: 7px 7px 0 14px;
+					font-size: 12px;
+					font-family: Arial;
+					color: white;
+					}
+					.b-datepick
+						{
+						float: left;
+						}
+						.b-datepick input
+							{
+							padding: 0 0 0 5px;
+							background: url('static/images/frontend/new_layout/header/bg-datepicker.png') left top no-repeat;
+							width: 130px;
+							height: 28px;
+							font-family: Arial;
+							font-size: 1.3em;
+							color: #2F2B28;
+							}
+					.b-fake-select
+						{
+						margin: 7px 0 0 5px;
+						float: left;
+						width: 130px;
+						height: 23px;
+						}
+					
+						.b-fake-select form
+							{
+							width: 105px;
+							}
+							.lineform
+								{
+								width: 104px;
+								}
+						
+					
+				.h-button-wrapper
+					{
+					float: left;
+					margin: 4px 0 0 0;
+					}
+							
+				.b-view-button
+					{
+					margin: 3px 0 0 15px;
+					width: 160px;
+					height: 25px;
+					text-align: center;
+					color: white;
+					font-size: 12px;
+					background: #A93102;
+					text-transform: uppercase;
+					}
+					.b-view-button:hover
+						{
+						background-position: 1px bottom;
+						cursor: pointer;
+						background: #cd501f;
+						}
+				.b-view-button span
+					{
+					padding: 0 10px 0 0;
+					
+					}
+					/*.b-view-button span em
+						{
+						display: block;
+						font-size: 1.2em;
+						font-style: normal;
+						font-family: Arial;
+						text-transform: uppercase;
+						color: #ede8c4;
+						padding: 8px 0 0 10px;
+						height: 22px;
+						background: transparent url('static/images/frontend/buttons/button-image-b.png') left top no-repeat;
+						}*/
+				
+				.b-search-form 
+					{
+					float: right;
+					}
+					.b-search-form input
+						{
+						float: left;
+						width: 120px;
+						height: 22px;
+						padding: 0 5px;
+						font-family: Arial;
+						font-size: 1.2em;
+						color: #ede8c4;
+						background: transparent url('static/images/frontend/layout/bg-content-search-field.png') left top no-repeat;
+						}
+					.b-search-form button
+						{
+						position: relative!important;
+						left: -25px;
+						float: left;
+						width: 18px;
+						height: 18px;
+						background: url('static/images/frontend/new_layout/header/button-search.png') left top no-repeat;
+                        cursor: pointer;
+						}
+						
+/*
+	Check availability white
+*/	
+.b-white-datepick						
+	{
+	margin: 11px 5px 0 15px;
+	color: black;
+	font-family: Tahoma;
+	}
+	.b-image-bottom-title-white
+		{
+		margin: 17px 0 0 0;
+		float: left;
+		height: 18px;
+		width: 175px;
+		background: url('static/images/frontend/layout/content-check-availability-white.png') top left no-repeat;
+		}
+	.b-datepick-white
+		{
+		float: left;
+		width: 89px;
+		height: 40px;
+		background: transparent url('static/images/frontend/layout/sprite-datepick-white.png') right -38px no-repeat;
+		padding: 0 35px 0 0;
+		}
+		.b-datepick-white input
+			{
+			padding: 0 0 0 5px;
+			background: transparent url('static/images/frontend/layout/sprite-datepick-white.png') left top no-repeat;
+			width: 80px;
+			height: 40px;
+			font-family: Arial;
+			font-size: 1.3em;
+			color: #1f4c59;
+			}
+		.h-button-white
+			{
+			position: absolute;
+			top: 11px;
+			right: 20px;
+			margin: 6px 0 0 50px;
+			}
+			.b-datepick-white-select div.cuselFrameRight
+				{
+				width: 120px;
+				left: 0;
+				top: 7px;
+				height: 40px;
+				background: url('static/images/frontend/layout/bg-content-select-white.png') no-repeat!important;
+				}
+				.b-datepick-white-select div.cusel
+					{
+					background: none;
+					}
+				.b-datepick-white-select div.cuselText
+					{
+					padding: 18px 0 0 10px;
+					font-size: 12px;
+					color: #2f2b28;
+					}
+				.b-datepick-white-select div.cusel-scroll-wrap
+					{
+					top: 35px;
+					left: 19px;
+					}
+				.b-datepick-white-select div.cusel-scroll-wrap-b
+					{
+					}
+				.b-datepick-white-select div.cusel span
+					{
+					
+					}

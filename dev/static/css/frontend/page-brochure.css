@@ -1,0 +1,379 @@
+
+* input
+	{
+	outline: none;
+	border: none;
+	background: none;
+	}
+.b-brochure-form-right div.cusel-small span
+	{
+	padding-right: 15px!important;
+	}
+.b-brochure-wrapper
+	{
+	padding: 70px 0 0 0;
+	font-family: Times;
+	}
+	.b-brochure-wrapper h1
+		{
+		padding: 0 0 15px 0;
+		font-size: 3.8em;
+		color: #1f4c59;
+		font-weight: normal;
+		}
+	.b-brochure-wrapper p
+		{
+		font-size: 1.4em;
+		color: #332a1f;
+		}
+	.b-brochure-form-wrap 
+		{
+		padding: 37px 0 0 0;
+		}
+		.b-brochure-form-wrap div
+			{
+			float: left;
+			}
+			.b-brochure-input-r
+				{
+				margin: 0 0 12px 0;
+				padding: 0 8px 0 0;
+				background: url('static/images/frontend/brochure/bg-brochure-input-r.png') right bottom no-repeat;
+				}
+			.b-brochure-input-r:hover
+				{
+				cursor: pointer;
+				background-position: right top;
+				}
+			.b-brochure-input-l:hover
+				{
+				cursor: pointer;
+				background-position: left top;
+				}
+				.b-brochure-input-l input:hover
+					{
+					cursor: pointer;
+					}
+				.b-brochure-input-l
+					{
+					height: 35px;
+					background: url('static/images/frontend/brochure/bg-brochure-input-l.png') left bottom no-repeat;
+					}
+					.b-brochure-input-l input
+						{
+						height: 33px;
+						line-height: 2.4em;
+						width: 182px;
+						font-size: 1.4em;
+						font-family: Times;
+						padding: 0 15px;
+						}
+		.b-brochure-form-left
+			{
+			width: 230px;
+			}
+		.b-brochure-form-center
+			{
+			margin: 0 0 0 15px;
+			width: 230px;
+			}
+			.b-brochure-form-center div.cuselText
+				{
+				color: #332A1F;
+				height: 35px;
+				padding: 10px 0 0 15px;
+				font-family: Times;
+				font-size: 1.0em!important;
+				}
+			.b-brochure-form-center div.cusel
+				{
+				margin: 0 0 12px 0;
+				left: 0;
+				height: 35px;
+				width: 183px!important;
+				background: url('static/images/frontend/brochure/bg-brochure-select.png') left top no-repeat;
+				}
+				.b-brochure-form-center div.cusel span
+					{
+					margin: 0 0 0 1px;
+					width: 167px;
+					}
+					.b-brochure-form-center .cuselActive
+						{
+						background: none;
+						border-top: 1px solid #1f4c59;
+						border-bottom: 1px solid #1f4c59;
+						color: #1f4c59!important;
+						}
+				.b-brochure-form-center div.cuselFrameRight
+					{
+					width: 35px;
+					left: 185px;
+					background: url('static/images/frontend/brochure/bg-brochure-select.png') right top no-repeat;
+					}
+					.b-brochure-form-center div.cuselText
+						{
+						color: #332A1F;
+						font-size: 1.2em;
+						font-family: Times;
+						}
+						.b-brochure-form-center div.cusel-scroll-wrap
+							{
+							left: 26px;
+							top: 22px;
+							width: 195px!important;
+							background: url('static/images/frontend/brochure/bg-brochure-c-select-t.png') left top no-repeat;
+							}
+							.b-brochure-form-center div.cusel-scroll-wrap-b
+								{
+								width: 195px;
+								height: 12px;
+								background: url('static/images/frontend/brochure/bg-brochure-c-select-b.png') left bottom no-repeat;
+								}
+				.b-brochure-form-center div.b-state-select div.cusel-scroll-wrap
+					{
+					height: 185px;
+					}
+		.b-brochure-form-right 
+			{
+			margin: 0 0 0 35px;
+			width: 470px;
+			}
+			.b-brochure-date
+				{
+				margin: 0 0 12px 0;
+				padding: 0 39px 0 0;
+				background: url('static/images/frontend/brochure/bg-brochure-date.png') right top no-repeat;
+				}
+				.b-brochure-date:hover
+					{
+					cursor: pointer;
+					}
+				.b-brochure-date input
+					{
+					font-family: Times;
+					font-size: 1.4em;
+					padding: 0 0 0 15px;
+					height: 35px;
+					line-height: 2.4em;
+					width: 419px;
+					background: url('static/images/frontend/brochure/bg-brochure-input-l.png') right bottom no-repeat;
+					}
+				.b-brochure-form-right div.b-brochure-input-l input
+					{
+					width: 435px;
+					}
+				
+				.b-brochure-form-right div.lineForm2 div.cusel-scroll-wrap
+					{
+					height: 100px;
+					}
+				.b-brochure-form-right div.b-how-do-you-know div.cusel-scroll-wrap
+					{
+					height: 185px;
+					}
+				.b-brochure-form-right div.b-purpose-select div.cusel-scroll-wrap
+					{
+					height: 150px;
+					}
+				.b-brochure-form-right div.cusel
+					{
+					margin: 0 0 12px 0;
+					height: 35px;
+					width: 435px!important;
+					background: url('static/images/frontend/brochure/bg-brochure-select.png') left top no-repeat;
+					}
+				.b-brochure-form-right div.cuselFrameRight
+					{
+					width: 35px;
+					left: 437px;
+					background: url('static/images/frontend/brochure/bg-brochure-select.png') right top no-repeat;
+					}
+					.b-brochure-form-right div.cuselText
+						{
+						color: #332A1F;
+						height: 35px;
+						padding: 10px 0 0 15px;
+						font-family: Times;
+						font-size: 1.0em!important;
+						}
+						
+					.b-brochure-form-right div.cusel-scroll-wrap
+							{
+							left: 212px;
+							top: 22px;
+							width: 260px;
+							height: 120px;
+							background: url('static/images/frontend/brochure/bg-brochure-r-select-t.png') left top no-repeat;
+							}
+							.b-brochure-form-right div.cusel-scroll-wrap-b
+								{
+								width: 260px;
+								height: 5px;
+								background: url('static/images/frontend/brochure/bg-brochure-r-select-b.png') left bottom no-repeat;
+								}
+								.b-brochure-form-right div.cusel span
+									{
+									width: 229px;
+									padding-right: 22px;
+									}
+									.b-brochure-form-right .cuselActive
+										{
+										background: none;
+										border-top: 1px solid #1f4c59;
+										border-bottom: 1px solid #1f4c59;
+										color: #1f4c59!important;
+										}
+									.b-brochure-form-right .jScrollPaneTrack
+										{
+										left: 254px;
+										}
+										
+				.b-brochure-form-right div.sel-small
+					{
+					width: 191px!important;
+					margin-right: 53px;
+					}
+				.b-brochure-form-right div.sel-small.right
+					{
+					margin-right: 0;
+					}
+					.b-brochure-form-right div.sel-small div.cuselFrameRight
+						{
+						width: 35px;
+						left: 193px;
+						background: url('static/images/frontend/brochure/bg-brochure-select.png') right top no-repeat;
+						}
+					.b-brochure-form-right div.cusel-small
+						{
+						}
+					.b-brochure-form-right div.cusel-small div.cusel-scroll-wrap
+							{
+							left: 435px;
+							width: 36px;
+							background: url('static/images/frontend/brochure/bg-brochure-s-select-t.png') left top no-repeat;
+							}
+						.b-brochure-form-right div.sel-small div.cusel-scroll-wrap
+							{
+							width: 36px;
+							left: 192px;
+							}
+							.b-brochure-form-right div.cusel-small div.cusel-scroll-wrap-b
+								{
+								width: 36px;
+								background: url('static/images/frontend/brochure/bg-brochure-s-select-b.png') left bottom no-repeat;
+								}
+								.b-brochure-form-right div.cusel-small .jScrollPaneContainer,
+								.b-brochure-form-right div.cusel-small .cusel-scroll-pane,
+								.b-brochure-form-right div.cusel-small span
+									{
+									width: 12px;
+									text-align: center;
+									}
+									.b-brochure-form-right div.cusel-small .jScrollPaneTrack
+										{
+										left: 30px;
+										}									
+
+			.b-brochure-send-news
+				{
+				padding: 0 0 42px 0;
+				/*overflow: hidden;*/
+				}
+				.b-brochure-send-news-l
+					{
+					float: left;
+					}
+					.b-brochure-send-news-l p
+						{
+						float: left;
+						width: 140px;
+						padding: 0 0 0 15px;
+						}
+					.b-brochure-radio
+						{
+						padding: 10px 0 0 5px;
+						font-size: 1.4em;
+						font-family: Times;
+						color: #1f4c59;
+						}
+				.b-brochure-send-news div.b-how-do-you-know
+					{
+					float: left;
+					margin: 0 0 0 8px;
+					}
+				
+			.b-brochure-send-news div.cusel
+				{
+			/*	margin: 0 0 12px 0;*/
+				left: 0;
+				height: 35px;
+				width: 199px!important;
+				background: url('static/images/frontend/brochure/bg-brochure-select.png') left top no-repeat;
+				}
+				.b-brochure-send-news div.cusel span
+					{
+					padding-right: 15px;
+					width: 169px;
+					}
+					.b-brochure-send-news .cuselActive
+						{
+						background: none;
+						border-top: 1px solid #1f4c59;
+						border-bottom: 1px solid #1f4c59;
+						color: #1f4c59!important;
+						}
+				.b-brochure-send-news div.cuselFrameRight
+					{
+					width: 35px;
+					left: 201px;
+					background: url('static/images/frontend/brochure/bg-brochure-select.png') right top no-repeat;
+					}
+					.b-brochure-send-news div.cuselText
+						{
+						color: #332A1F!important;
+						font-size: 1.2em;
+						font-family: Times;
+						}
+						.b-brochure-send-news div.cusel-scroll-wrap
+							{
+							left: 42px;
+							top: 22px;
+							width: 195px;
+							background: url('static/images/frontend/brochure/bg-brochure-c-select-t.png') left top no-repeat;
+							}
+							.b-brochure-send-news div.cusel-scroll-wrap-b
+								{
+								width: 195px;
+								height: 12px;
+								background: url('static/images/frontend/brochure/bg-brochure-c-select-b.png') left bottom no-repeat;
+								}
+								.b-brochure-send-news .jScrollPaneTrack
+									{
+									left: 187px;
+									}
+									
+				.b-brochure-form-right textarea
+					{
+					width: 457px;
+					height: 50px;
+					padding: 30px 0 0 15px;
+					font-family: Times;
+					font-size: 1.4em;
+					resize: vertical;
+					border-radius: 4px;
+					background: url('static/images/frontend/contactus/bg-contactus-textarea.png') left bottom repeat;
+					overflow: auto;
+					}
+				.b-brochure-form-right button
+					{
+					margin: 37px 0 0 383px;
+					width: 88px;
+					height: 43px;
+					background: url('static/images/frontend/brochure/button-brochure.png') left top no-repeat;
+					}
+				.b-brochure-form-right button:hover
+					{
+					cursor: pointer;
+					background-position: left bottom;
+					}

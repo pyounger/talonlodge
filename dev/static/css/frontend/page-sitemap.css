@@ -1,0 +1,100 @@
+.b-sitemap-wrapper
+	{
+	padding: 77px 0 30px 0;
+	overflow: hidden;
+	}
+	.b-sitemap-wrapper a
+		{
+		color: #c52d00;
+		}
+	.b-sitemap-wrapper a:hover
+		{
+		color: #e1562d;
+		}
+		.b-sitemap-l,
+		.b-sitemap-c,
+		.b-sitemap-r
+			{
+			float: left;
+			width: 33%;
+			}
+	.b-sitemap-wrapper p
+		{
+		margin: 20px 0 0px 0;
+		width: 650px;
+		font-size: 1.4em;
+		color: #332a1f;
+		}
+	.h-sitemap-top p
+		{
+		width: auto;
+		}
+	.b-sitemap-wrapper h1
+		{
+		padding: 0 0 20px 0;
+        color: #1F4C59;
+        font-size: 3.8em;
+        font-family: BalticaPlain;
+        font-weight: normal;
+		}
+	.b-sitemap-wrapper h2
+		{
+        width: 185px;
+        padding: 10px 0 0 5px;
+        font-size: 1.5em;
+        color: #1f4c59;
+        font-weight: bold;
+		}
+	.b-sitemap-wrapper h3
+		{
+		padding: 10px 0 0 5px;
+        font-size: 1.4em;
+        color: #a93102;
+        font-weight: bold;
+		}
+	.b-sitemap-container
+		{
+		overflow: hidden;
+		}
+		.b-sitemap-i
+			{
+			float: left;
+			width: 180px;
+			margin: 0 0 0 18px;
+			}
+		.first-i
+			{
+			margin: 0;
+			}
+			.b-sitemap-img
+				{
+				margin: 10px 0 5px 0;
+				padding: 2px 0 0 3px;
+				width: 184px;
+				height: 81px;
+				background: url('static/images/frontend/sitemap/bg-sitemap-img-border.png') left top no-repeat;
+				}
+			.b-sitemap-wrapper ul,
+			.b-sitemap-wrapper ol
+				{
+				padding: 0 0 0 30px;
+				}
+			.b-sitemap-wrapper p,
+			.b-sitemap-wrapper ul li,
+			.b-sitemap-wrapper ol li
+				{
+				width: 185px;
+				font-size: 14px;
+				line-height: 1.4em;
+				}
+			.b-sitemap-wrapper p
+				{
+				padding: 0 0 0 5px;
+				}
+				.b-sitemap-i p span
+					{
+					}
+	.b-sitemap-footer
+		{
+		padding: 20px 0 0 0;
+		}

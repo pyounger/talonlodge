@@ -1,0 +1,122 @@
+.h-contactus-wrapper
+	{
+	padding: 77px 0 0 0;
+	height: 400px;
+	}
+	.b-contactus-l
+		{
+		float: left;
+		width: 250px;
+		}
+		.b-contactus-l h1
+			{
+			font-size: 3.8em;
+			}
+			ul.b-contactus-list
+				{
+				margin: 20px 0 0 0;
+				list-style: none;
+				}
+			ul.b-contactus-list li
+				{
+				color: #3F3A33;
+				margin: 0 0 3px 0;
+				font-size: 1.4em;
+				}
+				ul.b-contactus-list li span
+					{
+					color: #224d5b;
+					}
+	.b-contactus-r
+		{
+		width: 700px;
+		padding: 65px 0 0 20px;
+		float: left;
+		}
+		.b-contactus-r form
+			{
+			overflow: hidden;
+			}
+			.b-contactus-r form input
+				{
+				width: 250px;
+				color: #332a1f;
+				}
+			.b-contactus-form-l
+				{
+				float: left;
+				width: 280px;
+				}
+				.b-captcha
+					{
+					overflow: hidden;
+					}
+					.b-captcha div.b-brochure-input-r
+						{
+						padding: 0 8px 0 0;
+						float: left;
+						}
+						#captcha
+							{
+							padding-right: 2px;
+							width: 130px;
+							}
+					.b-captcha-img
+						{
+						overflow: hidden;
+						float: left;
+						padding: 0 0 0 1px;
+						width: 120px;
+						}
+						.b-captcha-img a
+							{
+							margin: 8px 0 0 0;
+							display: block;
+							}
+						.b-captcha-img img
+							{
+							float: left;
+							}
+			.b-contactus-form-r
+				{
+				float: left;
+				width: 390px;
+				margin: 0 0 0 30px;
+				}
+				.b-contactus-form-r textarea
+					{
+					width: 387px;
+					height: 160px;
+					padding: 10px 0 0 10px;
+					resize: vertical;
+					font-family: Times;
+					font-size: 1.4em;
+					border-radius: 4px;
+					background: url('static/images/frontend/contactus/bg-contactus-textarea.png') left bottom repeat;
+					overflow: auto;
+					}
+				.b-contactus-form-r button
+					{
+					float: left;
+					margin: 30px 0 0 300px;
+					width: 88px;
+					height: 43px;
+					background: url('static/images/frontend/brochure/button-brochure.png') left top no-repeat;
+					}
+				.b-contactus-form-r button:hover
+					{
+					cursor: pointer;
+					background-position: left bottom;
+					}
+
+
+    .b-contacts-success
+        {
+        padding: 38px 0 0 0 !important;
+        font-size: 1.8em !important;
+        color: #234E5C !important;
+        }
+    .b-brochure-wrapper .b-contacts-success
+        {
+        padding: 18px 0 38px 0  !important;
+        }

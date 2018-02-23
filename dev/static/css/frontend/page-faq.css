@@ -1,0 +1,116 @@
+.h-faq-wrapper
+	{
+	padding: 77px 0 30px 0;
+	}
+.h-fishinglodge-wrapper
+	{
+	padding: 41px 0 30px 0;
+	}
+	.h-faq-wrapper h1
+		{
+        color: #1F4C59;
+		font-size: 3.8em;
+        font-family: BalticaPlain;
+        font-weight: normal;
+		}
+	.h-faq-wrapper p,
+	.h-faq-wrapper ul li,
+	.h-faq-wrapper ol li
+		{
+		font-size: 14px;
+		line-height: 1.5em;
+		}
+	.h-faq-container
+		{
+		overflow: hidden;
+		margin: 17px 0 0 0;
+		}
+		.b-faq-l
+			{
+			width: 700px;
+			}
+		.b-faq-l, .b-faq-r
+			{
+			float: left;
+			}
+		.b-faq-r
+			{
+			margin: 3px 0 0 53px;
+			padding: 10px 0 0 0;
+			}
+			.b-round-button
+				{
+				padding: 30px 0 0 0;
+				width: 207px;
+				height: 178px;
+				background: url('static/images/frontend/faq/button-faq-circle.png') left top no-repeat;
+				}
+				.b-round-button a
+					{
+					display: block;
+					margin: 0 0 0 30px;
+					padding: 37px 0 0 0;
+					width: 151px;
+					height: 113px;
+					background: url('static/images/frontend/faq/button-faq-circle-inner.png') left top no-repeat;
+					text-decoration: none;
+					}
+					.b-round-button a em
+						{
+						display: block;
+						margin: 0 0 0 25px;
+						width: 100px;
+						font-family: Times;
+						font-size: 2.0em;
+						font-style: normal;
+						text-align: center;
+						color: white;
+						}
+				.b-round-button a:hover
+					{
+					background-position: left bottom;
+					}
+			.b-faq-l p
+				{
+				width: 710px;
+				margin: 0 0 25px 0;
+				font-size: 1.4em;
+				font-family: Times;
+				color: #332a1f;
+				}
+			.b-fishinglodge-l p
+				{
+				width: 710px;
+				}
+			.b-faq-button-r, .b-faq-button-l
+				{
+				background: url('static/images/frontend/faq/sprite-faq-button.png') no-repeat;
+				}
+			.b-faq-button-r
+				{
+				width: 135px;
+				margin: 15px 0 0 40px;
+				background-position: right 1px;
+				}
+			.b-faq-button-r:hover
+				{
+				background: url('static/images/frontend/faq/sprite-faq-button-hover.png') right 1px no-repeat;
+				}
+			
+			.b-faq-button-l
+				{
+				display: block;
+				height: 21px;
+				width: 110px;
+				padding: 4px 0 0 16px;
+				background-position: left bottom;
+				font-family: TImes;
+				color: white;
+				text-decoration: none;
+				font-style: italic;
+				font-size: 1.4em;
+				}
+			.b-faq-button-l:hover
+				{
+				background: url('static/images/frontend/faq/sprite-faq-button-hover.png') left bottom no-repeat;
+				}

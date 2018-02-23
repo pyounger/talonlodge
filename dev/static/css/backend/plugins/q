@@ -1,0 +1,84 @@
+<table>
+	<tr>
+		<td width="70%" colspan="4">{heading}</td>
+		<td>{sidebar-top}</td>
+	</tr>
+	<tr>
+		<td>{column-1}</td>
+		<td>{column-2}</td>
+		<td>{column-3}</td>
+		<td>{column-4}</td>
+		<td align="center" valign="center">Reviews</td>
+	</tr>
+	<tr>
+		<td rowspan="2" colspan="2">{footer-left}</td>
+		<td colspan="2">{footer-right-1}</td>
+		<td rowspan="2">Banner</td>
+	</tr>
+	<tr>
+		<td colspan="2">{footer-right-2}</td>
+	</tr>
+	<tr>
+		<td colspan="4">{reservations}</td>
+		<td rowspan="2">Explore the difference</td>
+	</tr>
+	<tr>
+		<td colspan="4">{reservations-comments}</td>
+	</tr>
+	<tr>
+		<td colspan="5">{gallery}</td>
+	</tr>	
+</table>
+
+
+<table>
+	<tr>
+		<td width="80%">{heading}</td>
+		<td rowspan="2">Reservation link</td>
+	</tr>
+	<tr>
+		<td>{content}</td>
+	</tr>	
+</table>
+
+<table>
+	<tr>
+		<td colspan="5">{heading}</td>
+	</tr>
+	<tr>
+		<td>{column-1}</td>
+		<td>{column-2}</td>
+		<td>{column-3}</td>
+		<td>{column-4}</td>
+		<td>{column-5}</td>
+	</tr>	
+</table>
+
+
+<table>
+	<tr>
+		<td colspan="3">{heading}</td>
+	</tr>
+	<tr>
+		<td>{column-1}</td>
+		<td>{column-2}</td>
+		<td>{column-3}</td>
+	</tr>	
+</table>
+
+
+<table>
+	<tr>
+		<td colspan="2">{heading}</td>
+	</tr>
+	<tr>
+		<td width="40%">{gallery}</td>
+		<td rowspan="3">{content}</td>
+	</tr>	
+	<tr>
+		<td>{gallery-subheader}</td>
+	</tr>	
+	<tr>
+		<td>{gallery-p}</td>
+	</tr>	
+</table>
