@@ -1,0 +1,28 @@
+[03-May-2015 23:38:11 America/Denver] PHP Warning:  mysql_query(): Access denied for user 'root'@'localhost' (using password: NO) in /home2/talonlod/public_html/lib/site_settings.php on line 4
+[03-May-2015 23:38:11 America/Denver] PHP Warning:  mysql_query(): A link to the server could not be established in /home2/talonlod/public_html/lib/site_settings.php on line 4
+[18-Jun-2015 23:47:38 America/Denver] PHP Warning:  mysql_query(): Access denied for user 'rchaudhry'@'localhost' (using password: NO) in /home2/talonlod/public_html/lib/site_settings.php on line 4
+[18-Jun-2015 23:47:38 America/Denver] PHP Warning:  mysql_query(): A link to the server could not be established in /home2/talonlod/public_html/lib/site_settings.php on line 4
+[20-Jul-2015 01:47:21 America/Denver] PHP Warning:  mysql_query(): Access denied for user 'dwalton'@'localhost' (using password: NO) in /home2/talonlod/public_html/lib/site_settings.php on line 4
+[20-Jul-2015 01:47:21 America/Denver] PHP Warning:  mysql_query(): A link to the server could not be established in /home2/talonlod/public_html/lib/site_settings.php on line 4
+[05-Aug-2015 16:03:47 America/Denver] PHP Warning:  mysql_query(): Access denied for user 'root'@'localhost' (using password: NO) in /home2/talonlod/public_html/lib/site_settings.php on line 4
+[05-Aug-2015 16:03:47 America/Denver] PHP Warning:  mysql_query(): A link to the server could not be established in /home2/talonlod/public_html/lib/site_settings.php on line 4
+[17-Aug-2015 21:41:26 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'blaurer2_admin'@'localhost' (using password: YES) in /home2/talonlod/public_html/lib/openCon1.php on line 6
+[18-Aug-2015 04:14:59 America/Denver] PHP Notice:  Undefined variable: conn in /home2/talonlod/public_html/lib/closeCon.php on line 2
+[18-Aug-2015 04:14:59 America/Denver] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home2/talonlod/public_html/lib/closeCon.php on line 2
+[13-Oct-2015 05:28:31 America/Denver] PHP Warning:  mysql_query(): Access denied for user 'dwalton'@'localhost' (using password: NO) in /home2/talonlod/public_html/lib/site_settings.php on line 4
+[13-Oct-2015 05:28:31 America/Denver] PHP Warning:  mysql_query(): A link to the server could not be established in /home2/talonlod/public_html/lib/site_settings.php on line 4
+[02-Jan-2016 10:09:53 America/Denver] PHP Warning:  mysql_query(): Access denied for user 'root'@'localhost' (using password: NO) in /home2/talonlod/public_html/lib/site_settings.php on line 4
+[02-Jan-2016 10:09:53 America/Denver] PHP Warning:  mysql_query(): A link to the server could not be established in /home2/talonlod/public_html/lib/site_settings.php on line 4
+[04-Jan-2016 07:57:06 America/Denver] PHP Warning:  mysql_query(): Access denied for user 'root'@'localhost' (using password: NO) in /home2/talonlod/public_html/lib/site_settings.php on line 4
+[04-Jan-2016 07:57:06 America/Denver] PHP Warning:  mysql_query(): A link to the server could not be established in /home2/talonlod/public_html/lib/site_settings.php on line 4
+[06-Jan-2016 06:47:46 America/Denver] PHP Warning:  mysql_query(): Access denied for user 'root'@'localhost' (using password: NO) in /home2/talonlod/public_html/lib/site_settings.php on line 4
+[06-Jan-2016 06:47:46 America/Denver] PHP Warning:  mysql_query(): A link to the server could not be established in /home2/talonlod/public_html/lib/site_settings.php on line 4
+[06-May-2016 16:45:16 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'blaurer2_admin'@'localhost' (using password: YES) in /home2/talonlod/public_html/lib/openCon1.php on line 6
+[06-May-2016 23:40:25 America/Denver] PHP Notice:  Undefined variable: conn in /home2/talonlod/public_html/lib/closeCon.php on line 2
+[06-May-2016 23:40:25 America/Denver] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home2/talonlod/public_html/lib/closeCon.php on line 2
+[07-May-2016 01:04:28 America/Denver] PHP Notice:  Undefined variable: dbServer in /home2/talonlod/public_html/lib/database.pdo.php on line 5
+[07-May-2016 01:04:28 America/Denver] PHP Notice:  Undefined variable: dbDatabase in /home2/talonlod/public_html/lib/database.pdo.php on line 6
+[07-May-2016 01:04:28 America/Denver] PHP Notice:  Undefined variable: dbUserName in /home2/talonlod/public_html/lib/database.pdo.php on line 7
+[07-May-2016 01:04:28 America/Denver] PHP Notice:  Undefined variable: dbPassword in /home2/talonlod/public_html/lib/database.pdo.php on line 8
+[17-Sep-2016 21:42:35 America/Denver] PHP Warning:  mysql_query(): Access denied for user 'cmoras'@'localhost' (using password: NO) in /home2/talonlod/public_html/lib/site_settings.php on line 4
+[17-Sep-2016 21:42:35 America/Denver] PHP Warning:  mysql_query(): A link to the server could not be established in /home2/talonlod/public_html/lib/site_settings.php on line 4
