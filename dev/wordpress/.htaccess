@@ -1,0 +1,3 @@
+# Use PHP54 Single php.ini as default
+# Changed PHP handler from application/x-httpd-php54s to application/x-httpd-phpbetas on Thu Jan  7 14:27:52 MST 2016.
+AddHandler application/x-httpd-phpbetas .php

@@ -1,0 +1,276 @@
+#IframeId html, #IframeId html body{
+    height: auto!important;
+}
+
+.b-reservation-view-confirm{
+    float: right;
+    width: 115px!important;
+}
+
+.b-reservation-view-confirm:after{
+    overflow: hidden;
+    clear: both;
+}
+
+.b-reservation-view-additional-details{
+    width: 100%;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+
+.b-reservation-wrapper, .b-reservation-view-wrapper{
+    padding: 0!important;
+}
+.l-center{
+	width: 100%;
+	max-width: 980px;
+}
+.b-reservation-column ul li a{
+    width:100%!important;
+}
+.b-white-wrapper{
+	/*height: auto!important;
+	min-height: 60px!important;
+	padding:20px!important;*/
+}
+@media screen and(max-width: 768px){
+    .b-reservation-column ul li div.b-reservation-i-l{
+        width: 75%!important;
+        float:left!important;
+    }
+}
+
+.b-reservation-column ul li div.b-reservation-i-l{
+        width: 80%!important;
+        float:left!important;
+}
+
+@media screen and (max-width: 980px){
+	.b-datepick-white-select div.cuselFrameRight{
+		top: 0;
+	}
+
+	.order-form>div.b-image-bottom-datepick, .order-form>div.b-datepick-white, .order-form>div.b-datepick-white-select{
+		width: 12%;
+		max-width: 12%;
+		float: left;
+		margin: 0;
+		padding-left: 0;
+		margin-right: .5%;
+	}
+
+	.b-datepick-white-select div.cuselText{
+		padding: 12px 0 0 10px!important;
+	}
+
+	.order-form>.h-button-white{
+		margin-top: 0!important;
+	}
+
+	.b-image-bottom-title-white{
+		float: none;
+	}
+
+	.b-white-wrapper{
+		height: 95px!important;
+	}
+
+	.b-datepick-white-select div.cusel-scroll-wrap{
+		left: 0;
+	}
+        
+        .b-reservation-column{
+		width:49%!important;
+		float:left; 
+                margin-right: .5%;
+	}
+        
+        .b-reservation-column-r{
+            margin:0;
+        }
+}
+@media screen and (max-width: 768px){
+	.order-form>div.b-image-bottom-datepick, .order-form>div.b-datepick-white, .order-form>div.b-datepick-white-select{
+		width: 95%;
+		max-width: 95%;
+		float: none;
+		margin: 0;
+		padding-left: 0;
+		margin-right: 0!important;
+		margin: 10px 0!important;
+	}
+
+	.order-form>div.b-image-bottom-datepick{
+		margin-bottom: 0!important;
+	}
+
+	.order-form>.h-button-white{
+		bottom: 11px!important;
+		top: initial!important;
+	}
+
+	.b-datepick-white-select>.lineForm{
+		height: 45px;
+	}
+
+	.b-white-wrapper{
+		height: auto!important;
+	}
+
+	.b-reservation-years>div{
+		float:none!important;
+	}
+	.b-reservation-years>div>strong>span{
+		margin-right:10px;
+		margin-bottom:10px;
+	}
+        
+	.b-reservation-column ul li a{
+		height: auto;
+		display:block;
+		width:100%!important;
+	}
+
+	.b-reservation-column{
+		width:49%!important;
+		float:left; 
+                margin-right: .5%;
+	}
+        
+        .b-reservation-column-r{
+            margin:0;
+        }
+        
+        .b-reservation-column ul li div.b-reservation-i-l{
+            width: 75%!important;
+            float:left!important;
+        }
+}
+
+@media screen and (max-width: 480px){
+	.order-form>div.b-image-bottom-datepick, .order-form>div.b-datepick-white, .order-form>div.b-datepick-white-select{
+		width: 90%;
+		max-width: 90%;
+	}
+
+	.b-reservation-column ul li a{
+		height: auto;
+		display:block;
+		width:100%!important;
+	}
+
+	.b-reservation-column{
+		width:100%!important;
+		float:none;
+	}
+
+	.b-reservation-column-r{
+		margin: 0!important;
+	}
+}
+
+
+/*POPUP*/
+
+        .popup-bg{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0,0,0,.6);
+            z-index: 9999;
+            display: none;
+        }
+        
+        .popup-close{
+            position: absolute;
+            right: -13px;
+            top: -16px;
+            height: 32px;
+            width: 30px;
+            cursor: pointer;
+            background: transparent url(http://www.dev.talonlodge.com/static/images/frontend/page-gallery/button-close.png) 100% 100% no-repeat;
+            display: inline-block;
+        }
+        
+        .popup-container{
+           width: 100%;
+           max-width: 360px;
+           margin: 50px auto;
+           border: 1px solid #ccc;
+           background-color: #f8f8f8;
+           padding: 15px;
+           box-sizing: border-box; 
+           position: relative;
+        }
+        
+        .popup-container h3, .popup-container p{
+            padding-left: 0;
+        }
+        
+        .open_popup{
+            width: 115px;
+            height: 44px;
+            margin: 3px 0 0 0;
+            display: inline-block;
+            cursor: pointer;
+            background: url('static/images/frontend/reservation/button-reservation.png') left top no-repeat;
+            float: right;
+        }
+        
+        .b-popup-footer{
+            width: 94%!important;
+            margin: 0!important;
+            height: auto!important;
+            background: #d5dde0;
+            padding: 10px;
+        }
+        
+        .submit-popup {
+            margin: 8px auto;
+            width: 304px;
+            height: 35px;
+            display: block;
+            background: url('static/images/frontend/reservation/popup-button.png') left top no-repeat;
+            cursor: pointer;
+        }
+        
+        .comments{
+            width: 97%;
+            max-width: 100%;
+            height: 50px;
+            margin-bottom: 10px;
+            background: #dfdedc;
+            padding-top: 5px;
+            padding-left: 10px;
+        }
+        
+        .comments:hover{
+            background: #edf1f2;
+        }
+        
+        .form_error{
+            color: #a94442;
+            background-color: #f2dede;
+            padding: 5px 10px;
+            border-radius: 2px;
+            margin-bottom: 5px;
+            font-size: 13px;
+            display: block;
+        }
+        
+        .success_msg{
+            color: #3c763d;
+            background-color: #dff0d8;
+            padding: 5px 10px;
+            border-radius: 2px;
+            margin-bottom: 5px;
+            font-size: 25px;
+            display: block;
+            text-align: center;
+        }
+        
+        .success-popup{
+            margin: 175px auto;
+        }
