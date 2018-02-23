@@ -1,0 +1,375 @@
+<?php
+
+	ob_start();
+	session_start();
+  	include("../asset/constants.php");
+	$type=$_REQUEST['type'];
+	include("../asset/databasefunctions.php");
+	include("../asset/thumb.php");
+	$databaseobj=new database();
+if($type=="savefiles")
+{	
+	//error_reporting(0);
+	$galid = $_POST['galid'];
+	$mesage = $_POST['txt'];
+	$mode = $_POST['mode'];
+	$heading = $_POST['heading1'];
+	$bannercol = $_POST['bannercol'];
+	$fontcol = $_POST['fontcol'];
+//	$mode = $_POST['mode'];
+//	$id = $_REQUEST['bltid'];
+//	$title = $_POST['title'];
+//	$description = $_POST['description'];
+	$cat_id= $_POST['cat_id'];
+//	$subcat = $_POST['subcat'];
+//	$status = $_POST['status'];
+//	$created =  date("Y-m-d H:i:s");
+
+	$target_path = "fileshare/";
+	$thumbpath=$target_path;
+	
+	$doc = $_FILES['filename']['name'];
+	$ext = explode(".",$doc);
+	$cnt = count($ext);
+	$timeval=time();
+	$imagename=$ext[0].$timeval.".".$ext[1];
+	
+	
+	$target_path = $target_path.$imagename;
+	$userid=$_SESSION['user_id'];
+	$thumbimage=$ext[0].$timeval."_thumb.".$ext[1];
+	$thumb1 = $thumbpath.$ext[0].$timeval."_thumb.".$ext[1];
+	
+	
+	
+	
+	//die;
+	
+	if($mode=='add')
+	{
+		if($doc!='')
+		{
+			if ($cnt>0)
+			{
+					$y = $ext[$cnt-1];
+					if ($y=="jpg"||$y=="jpeg"||$y=="gif"||$y=="png")
+					{
+							if(move_uploaded_file($_FILES['filename']['tmp_name'], $target_path))
+							{
+								
+								GenerateThumbFile($target_path,$thumb1,100,93);
+								
+								$select = "insert into tblgallery(imagepath,thumbpath,heading,message,catid,bannercol,fontcol)values( '".$doc."','".$thumbimage."','".$heading."','".$mesage."','".$cat_id."','".$bannercol."','".$fontcol."')";
+								
+								mysql_query($select) or die(mysql_error());
+								
+								header("location:viewfileshare.php?task=add");
+							}
+					}
+			}
+		}
+		else
+		{
+			header("location:viewfileshare.php?task=image");
+		}
+		
+	}
+	else
+	{
+		if($doc!='')
+		{
+			if ($cnt>0)
+			{
+					$y = $ext[$cnt-1];
+					if ($y=="jpg"||$y=="jpeg"||$y=="gif"||$y=="png")
+					{
+							if(move_uploaded_file($_FILES['filename']['tmp_name'], $target_path))
+							{
+								
+								GenerateThumbFile($target_path,$thumb1,100,93);
+								$select = "update tblgallery set heading='".$heading."',message='".$mesage."',catid='".$cat_id."',bannercol='".$bannercol."',fontcol='".$fontcol."',imagepath='".$doc."',thumbpath='".$thumbimage."' where id=$galid";
+								mysql_query($select) or die(mysql_error());
+								header("location:viewfileshare.php?task=add");
+								
+							}
+					}
+			}
+		}
+		else
+		{
+			$select = "update tblgallery set heading='".$heading."',message='".$mesage."',catid='".$cat_id."',bannercol='".$bannercol."',fontcol='".$fontcol."' where id=$galid";
+			
+			
+			
+			mysql_query($select) or die(mysql_error());
+			header("location:viewfileshare.php?task=update");
+			
+		}
+		
+		
+	}
+	
+}
+
+else if($type=="cat_add")
+{
+
+//echo "hello"; exit;
+if(isset($_POST['submit']))
+{
+ $catname=$_POST['cat_name'];
+ $url=$_POST['url'];
+//echo $catname;
+
+	$insert=mysql_query("insert into category(`cat_name`,`url`) values('$catname','$url')");
+	if($insert)
+	{
+	 echo "insert query;";
+	}
+	else
+	{
+	 echo "not insert query:";
+	}
+	header("location:category.php?task=add");
+       }
+}
+//seo add
+else if($type=="seo_add")
+{
+ if(isset($_POST['submit']))
+ {
+  $title=$_POST['title'];
+  $keyword=$_POST['keyword'];
+  $description=$_POST['description'];
+  $content_type=$_POST['content_type'];
+  $robots=$_POST['robots'];
+  $revisit_after=$_POST['revisit_after'];
+  $copywritte=$_POST['copywritte'];
+ 
+ //echo $catname;
+
+	$insert=mysql_query("insert into seo(`title`,`keyword`,`description`,`content_type`,`robots`,`revisit_after`,`copywritte`) values('$title','$keyword','$description','$content_type','$robots','$revisit_after','$copywritte')");
+	if($insert)
+	{
+	  echo "insert query;";
+	}
+	else
+	{
+	  echo "not insert query:";
+	}
+	 header("location:seo.php?task=add");
+ }
+}
+//sub_cat_add
+else if($type=="sub_cat_add")
+{
+
+//echo "hello"; exit;
+if(isset($_POST['submit']))
+{
+ $subcatname=$_POST['sub_cat_name'];
+ $category_id=$_POST['cat_id'];
+ 
+//echo $catname;
+ $insert=mysql_query("insert into sub_category(`sub_cat_name`,`cat_id`) values('$subcatname','$category_id')");
+ if($insert)
+ {
+  echo "insert query;";
+ }
+ else
+ {
+  echo "not insert query:";
+ }
+ header("location:sub_category.php");
+}
+
+} 
+/*else if($type=="saveform")
+{
+	//error_reporting(0);
+	$mode = $_POST['mode'];
+	$id = $_REQUEST['bltid'];
+	$title = $_POST['title'];
+	$description = $_POST['description'];
+	$status = $_POST['status'];
+	$created =  date("Y-m-d H:i:s");
+	$target_path = "fileshare/";
+	$thumbpath=$target_path;
+	$target_path = $target_path.basename( $_FILES['filename']['name']);
+	$doc = $_FILES['filename']['name'];
+	$ext = explode(".",$doc);
+	$cnt = count($ext);
+	$userid=$_SESSION['user_id'];
+	$thumbimage=$ext[0]."_thumb.".$ext[1];
+	$thumb1 = $thumbpath.$ext[0]."_thumb.".$ext[1];
+	//die;
+
+
+	
+	if ($cnt>0)
+	{
+			$y = $ext[$cnt-1];
+			if ($y=="jpg"||$y=="jpeg"||$y=="gif"||$y=="png")
+			{
+					if(move_uploaded_file($_FILES['filename']['tmp_name'], $target_path))
+					{
+						
+						GenerateThumbFile($target_path,$thumb1,100,93);
+						
+						$select = "insert into tblgallery(imagepath,thumbpath)values( '".$doc."','".$thumbimage."')";
+					
+						mysql_query($select) or die(mysql_error());
+						header("location:category.php");
+						
+					}
+			}
+	}
+	
+}*//* Code to Save Document */
+else if($type=="savedocument")
+{
+	$mode = $_POST['mode'];
+	$id = $_REQUEST['bltid'];
+	$title = $_POST['title'];
+	$created = $_REQUEST['created'];
+	$doctype = $_REQUEST['doctype'];
+	$category_id = $_REQUEST['category_id'];
+	$target_path = "docs/";
+	$target_path = $target_path . basename( $_FILES['filename']['name']);
+	$doc = $_FILES['filename']['name'];
+	$ext = explode(".",$doc);
+	$cnt = count($ext);
+	
+	if($doc=="")
+	{
+			if($mode=="edit")
+			{
+				$select = "update documents set title = '".$title."', type = '".$doctype."', category_id = '".$category_id."', created_at = '".$created."' where id='".$id."'";
+				mysql_query($select);
+			}
+			else
+			{
+				$select = "insert into documents (title, type, category_id, attachments, created_at) values ('".$title."', '".$doctype."', '".$category_id."', '".$doc."', '".$created."')";
+				mysql_query($select);
+			}
+			header("location:viewdocument.php");
+	}
+	else
+	{
+			if ($cnt>0)
+			{
+					$y = $ext[$cnt-1];
+					if ($y=="doc"||$y=="txt"||$y=="pdf")
+					{
+							if(move_uploaded_file($_FILES['filename']['tmp_name'], $target_path))
+							{
+									if($mode=="edit")
+									{
+										$select = "update documents set title = '".$title."', type = '".$doctype."', category_id = '".$category_id."', 
+										attachments = '".$doc."', created_at = '".$created."' where id='$id'";
+										mysql_query($select);
+									}
+									else
+									{
+										$select = "insert into documents (title, type, category_id, attachments, created_at) values ('".$title."', '".$doctype."', '".$category_id."', '".$doc."', '".$created."')";
+										mysql_query($select) or die(mysql_error());
+									}
+									header("location:viewdocument.php");
+							}
+					}else
+					{
+							header("location:add_editdocument.php?val=mis");
+						
+					}
+			}
+	}
+}
+else if($type=="sub")
+{
+	$uname=$_POST['field1'];
+	$pass=$_POST['field2'];
+	$select="select * from users where username='$uname' and password='$pass'";
+	echo $select;
+	$resource=mysql_query($select);
+	$resourcedetail=mysql_fetch_assoc($resource);
+	$count=mysql_num_rows($resource);
+	if($count>=1)
+	{
+		$_SESSION['username']=$uname;
+		$_SESSION['user_type']=$resourcedetail['type'];
+		$_SESSION['user_id']=$resourcedetail['id'];
+   		header("location:viewfileshare.php");
+		exit;
+	}
+	else
+	{
+		header("location:index.php?type=mis");
+		exit;
+	}     
+}
+else if($type=="changepwd")
+{ 
+	$oldpwd=$_POST['oldpwd'];
+	$newpwd=$_POST['newpwd'];
+	$confirmpwd=$_POST['confirmpwd'];
+	if(isset($_SESSION['username']))
+	{
+		$username=$_SESSION['username'];
+		
+	}
+	
+	 if($newpwd==''||$confirmpwd==''||$oldpwd=='')
+	{
+		header("location:changepassword.php?type=mis");
+	}
+	else if($newpwd==$confirmpwd)
+	{
+		$select="update users set password='$newpwd' where username='$username' and password='$oldpwd' ";
+	
+		mysql_query($select);
+		
+		header("location:changepassword.php?type=change");
+	}
+	else
+	{
+		header("location:changepassword.php?type=mis");
+		
+	}
+}
+/* Code to add New Message */
+else if($type=="savemessage")
+{ 
+	print_r($_POST);
+	/*
+	[field1] => tt 
+	[task5] => 2011-10-17 
+	[task6] => 2011-10-17 
+	[field3] => general 
+	[field4] => dse 
+	[field2] => 1 
+	[submit] => save
+	die("here");*/
+	$title = $_POST['field1'];
+	$status = $_POST['field2'];
+	$type = $_POST['field3'];
+	$description = $_POST['field4'];
+	$created = $_POST['field5'];
+	$modified = $_POST['field6'];
+	
+	 //$task4=$_POST['task4'];
+	
+	if($task4=="update")
+	{
+    	//$select="update category set cat_name='$lname',status='$status' where cat_id='$catid'";          
+		mysql_query($select);
+	}else
+	{
+		//$select="insert into category (cat_name,status)values('$lname','$status')";
+		$select="insert into messages (title,type,description,created_at,modified_at,status)values('$title','$type','$description','$created','$modified','$status')";
+		mysql_query($select);
+	}
+	header("location:viewmessages.php");
+}
+
+ob_flush();
+?>

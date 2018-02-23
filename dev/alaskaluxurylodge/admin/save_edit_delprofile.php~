@@ -1,0 +1,431 @@
+<?php
+ob_start();
+  session_start();
+  //include("../asset/databaseclass.php");
+$type=$_REQUEST['type'];
+	   include("../asset/databasefunctions.php");
+
+		   include("../asset/email_config.php");
+	$databaseobj=new database();
+
+
+
+if($type=="savecountry")
+{ 
+	$cname=$_POST['field1'];
+	$status=$_POST['field2'];
+	$cid=$_POST['cid'];
+	 $taskdetail=$_POST['taskdetail'];
+
+	if($taskdetail=="update")
+	{
+    	$select="update country set country_name='$cname',status='$status' where country_id='$cid'";          
+		mysql_query($select);
+	}else
+	{
+		$select="insert into country (country_name,status)values('$cname','$status')";
+    mysql_query($select);
+	}
+	header("location:viewcountry.php");
+}
+else if($type=="savestate")
+{
+	$sname=$_POST['field1'];
+	$cid=$_POST['field2'];
+	$status=$_POST['field3'];
+	$sid=$_POST['sid'];
+	$task1=$_POST['task1'];
+	if($task1=="update")
+	{
+		$select="update state set state_name='$sname',country_id='$cid',status='$status' where state_id='$sid'";          
+		mysql_query($select);
+	}else
+	{
+		$select="insert into state (state_name,country_id,status)values('$sname','$cid','$status')";
+    mysql_query($select);
+	}
+	header("location:viewstate.php");
+}
+else if($type=="savecity")
+{
+	$ciname=$_POST['field1'];
+	$count=$_POST['field2'];
+	$state=$_POST['state'];
+	$status=$_POST['field4'];
+	$cityid=$_POST['cityid'];
+	 $task2=$_POST['task2'];
+
+	if($task2=="update")
+	{
+    	$select="update city set city_name='$ciname',country_id='$count',state_id='$state',status='$status' where city_id='$cityid'";          
+		mysql_query($select);
+	}else
+	{
+		$select="insert into city (city_name,country_id,state_id,status)values('$ciname','$count','$state','$status')";
+    mysql_query($select);
+	}
+	header("location:viewcity.php");
+}
+else if($type=="savelocation")
+{ 
+	$lname=$_POST['field1'];
+	$status=$_POST['field2'];
+	$locid=$_POST['locid'];
+	 $task3=$_POST['task3'];
+
+	if($task3=="update")
+	{
+    	$select="update location set loc_name='$lname',status='$status' where loc_id='$locid'";          
+		mysql_query($select);
+	}else
+	{
+		$select="insert into location (loc_name,status)values('$lname','$status')";
+    mysql_query($select);
+	}
+	header("location:viewlocation.php");
+}
+else if($type=="savecategory")
+{ 
+	$lname=$_POST['field1'];
+	$status=$_POST['field2'];
+	$catid=$_POST['catid'];
+	 $task4=$_POST['task4'];
+
+	if($task4=="update")
+	{
+    	$select="update category set cat_name='$lname',status='$status' where cat_id='$catid'";          
+		mysql_query($select);
+	}else
+	{
+		$select="insert into category (cat_name,status)values('$lname','$status')";
+    mysql_query($select);
+	}
+	header("location:viewcategory.php");
+}
+else if($type=="savegroup")
+{ 
+	$lname=$_POST['field1'];
+	$status=$_POST['field2'];
+	$groupid=$_POST['groupid'];
+	 $task5=$_POST['task5'];
+
+	if($task5=="update")
+	{
+    	$select="update groups set group_name='$lname',status='$status' where group_id='$groupid'";          
+		mysql_query($select);
+	}else
+	{
+		$select="insert into groups (group_name,status)values('$lname','$status')";
+    mysql_query($select);
+	}
+	header("location:viewgroup.php");
+}
+else if($type=="saveproduct")
+{ 
+	$pro=$_POST['field1'];
+	$desc=$_POST['field2'];
+	$com=$_POST['field3'];
+	$cat=$_POST['field4'];
+	$group=$_POST['field5'];
+	$status=$_POST['field6'];
+	$proid=$_POST['proid'];
+	$task6=$_POST['task6'];
+	if($task6=="update")
+	{
+    	$select="update product set pname='$pro',pdesc='$desc','companyid='$com',catid='$cat',groupid='$group',status='$status' where pid='$proid'";          
+		mysql_query($select);
+	}else
+	{
+		$select="insert into product(pname,pdesc,companyid,catid,groupid,status) values('$pro','$desc','$com','$cat','$group','$status')";
+    mysql_query($select);
+	}
+	header("location:viewproduct.php");
+}
+else if($type=="sub")
+{	
+	$uname=$_POST['field1'];
+	$pass=$_POST['field2'];
+  
+	echo $select="select * from users where username='$uname' and password='$pass' and u_type='ad'";
+die;
+	$resource=mysql_query($select);
+	$count=mysql_num_rows($resource);
+	
+	
+	if($count>=1)
+	{
+		$_SESSION['username']=$uname;	
+   		header("location:viewcountry.php");
+		exit;
+	}
+	else
+	{
+   	header("location:index.php?type=mis");
+	exit;
+	}     
+}
+else if($type=="addteach")
+{
+  $field=Array();
+
+$no=$_REQUEST['no'];
+ $fieldcount=$no*4;
+
+session_start();
+$instituteid=$_SESSION['instituteid'];
+
+for($i=1;$i<=$fieldcount;$i++)
+{
+  $field[$i]=$_POST["field".$i];
+  
+}
+$k=1;
+for($j=1;$j<=$no;$j++)
+{
+  	$kistinc=$k+1;
+		$k2ndinc=$k+2;
+		$k3rdinc=$k+3;
+  $pwd=rand(10000,100000);
+  $q=Array(
+	       "teacher_password"=>"$pwd",
+           "teacher_name"=>"$field[$k]",
+           "teacher_email"=>"$field[$kistinc]",
+            "teacher_mobile"=>"$field[$k2ndinc]",
+             "teacher_qualification"=>"$field[$k3rdinc]",
+           "institute_id"=>"$instituteid"
+           );
+  	$databaseobj->doinsert("teachermaster",$q);
+ 
+    
+    $to = $field[$kistinc];
+//$subject = "Login Details !";
+
+$body = "
+<div >Dear '$field[$k]',<div>Enclosed is the format</div><div><br></div><div>Dear '$field[5]'</div><div>Thank you for registering on www.edumax.in- India's best tools for the education Sector.</div><div>The details for your account are as under:</div>
+<div>Name of the Teacher:'$field[$k]'</div><div>Username:'$field[$kistinc]'</div><div>Current password:'$pwd'</div><div>You can reset the password after logging into your account here <a href=\"$url\" target=\"_blank\">Click Here</a></div><div><br>
+</div><div>For any queries on your account, please mail us at <a href=\"mailto:$mailto\" target=\"_blank\">support@edumax.in</a>.</div><div><br></div><div>regards</div><div>EduMax Team</div><div><div> ";
+//$from="edumax.in";
+$databaseobj->sendemail($to,$subject,$body,$from);
+   $k=$k+4;
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+}
+    
+
+
+header("location:viewteacher.php");
+       
+
+
+
+}
+else if($type=="addsection")
+{
+  $field=Array();
+
+$no=$_REQUEST['no'];
+ $fieldcount=$no*2;
+
+session_start();
+$instituteid=$_SESSION['instituteid'];
+
+for($i=1;$i<=$fieldcount;$i++)
+{
+  $field[$i]=$_POST["field".$i];
+  
+}
+$classid=$_POST['classid'];
+$k=1;
+for($j=1;$j<=$no;$j++)
+{
+  	  	$kistinc=$k+1;
+	 $select="insert into sectionmaster (class_id,section_name,teacher_id,institute_id )values('$classid','$field[$k]','$field[$kistinc]','$instituteid')";
+ $resource=mysql_query($select);
+    $k=$k+2;
+}
+    
+
+
+header("location:viewsection.php");
+       
+
+
+
+}
+else if($type=="addsubject")
+{
+  $field=Array();
+
+$no=$_REQUEST['no'];
+ $fieldcount=$no*4;
+
+session_start();
+$instituteid=$_SESSION['instituteid'];
+
+for($i=1;$i<=$fieldcount;$i++)
+{
+  $field[$i]=$_POST["field".$i];
+  
+}
+
+
+$k=1;
+for($j=1;$j<=$no;$j++)
+{
+  	  	$kistinc=$k+1;
+                $k2ndinc=$k+2;
+                $k3rdinc=$k+3;
+                for($addsub=0;$addsub<count($field[$k3rdinc]);$addsub++)
+                {
+                  $sectionval=$field[$k3rdinc][$addsub];
+	echo  $select="insert into subjectmaster (subject_name,teacher_id,section_id,institute_id )values('$field[$k]','$field[$kistinc]','$sectionval','$instituteid')";
+ $resource=mysql_query($select);
+                }
+               
+    $k=$k+4;
+}
+    
+
+
+header("location:viewsubjects.php");
+       
+
+
+
+}
+else if($type=="updatesection")
+{
+  $field=Array();
+
+$no=$_REQUEST['no'];
+
+
+session_start();
+
+$instituteid=$_SESSION['instituteid'];
+$sectionid=$_POST['sectionid'];
+$field2=$_POST['field2'];
+$classid=$_POST['class'];
+
+	$teacherid=$_POST['selectteacher'];
+  $select="update sectionmaster set section_name='$field2',class_id='$classid',teacher_id='$teacherid'where section_id='$sectionid'";
+
+
+
+   $resource=mysql_query($select);
+
+    
+
+
+header("location:viewsection.php");
+       
+
+
+
+}
+else if($type=="updatesubject")
+{
+  $field=Array();
+
+$no=$_REQUEST['no'];
+
+
+session_start();
+
+$instituteid=$_SESSION['instituteid'];
+
+$field2=$_POST['field2'];
+$classid=$_POST['class'];
+$teacherid=$_POST['selectteacher'];
+$subjectid=$_POST['subjectid'];
+
+    $select="update subjectmaster set subject_name='$field2',section_id='$classid',teacher_id='$teacherid' where subject_id='$subjectid'";
+$resource=mysql_query($select);
+header("location:viewsubjects.php");
+}
+else if($type=="saveteach")
+{
+  $field=Array();
+$teacherid=$_REQUEST['teacherid'];
+$fieldcount=$_REQUEST['fieldcount'];
+for($i=1;$i<=$fieldcount;$i++)
+{
+ $field[$i]=$_POST["field".$i];
+  
+}
+
+ $select="update teachermaster set teacher_name='$field[1]',teacher_email='$field[2]',teacher_mobile='$field[3]',teacher_qualification='$field[4]' where teacher_id='$teacherid'";
+
+    
+ $resource=mysql_query($select);
+
+header("location:viewteacher.php");
+       
+
+
+
+}
+else if($type=="institutelogin")
+{
+  $field=Array();
+
+$fieldcount=$_REQUEST['fieldcount'];
+for($i=1;$i<=$fieldcount;$i++)
+{
+ $field[$i]=$_POST["field".$i];
+  
+}
+
+   $select="SELECT count( * ) AS countno, user_type, user_id, user_password, institutemaster.Institute_name, user_email, user_name, institutemaster.institute_id
+FROM usermaster
+INNER JOIN institutemaster ON institutemaster.Institute_id = usermaster.Institute_id where user_email='$field[1]' and user_password='$field[2]'  group by user_id";
+ session_start();
+ $resource=mysql_query($select);
+ while( $dataget = mysql_fetch_array($resource))
+ {
+   $_SESSION['uid']=$dataget['user_id'];
+$counttotal= $dataget['countno'];
+ $loginid= $dataget['user_email'];
+ $username= $dataget['user_name'];
+  $user_type= $dataget['user_type'];
+      $_SESSION['Institute_name']=$dataget['Institute_name'];
+   $instituteid= $dataget['institute_id'];
+ }
+   if($counttotal>=1)
+   {
+
+   $_SESSION['loginid']=$loginid;
+ $_SESSION['instituteid']=$instituteid;
+ $_SESSION['pwd']=$field[2];
+   $_SESSION['type']=$user_type;
+  $_SESSION['user_name']=$username;
+   header("location:institutearea.php");
+
+   }
+ 
+   else
+   {
+  
+ 
+header("location:institutelogin.php?type=mis");
+   }     
+
+
+
+}
+
+ob_flush();
+?>

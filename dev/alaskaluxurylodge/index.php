@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<?php
+include("asset/databaseclass.php");
+
+$select="select imagepath,heading,message,catid,url,bannercol,fontcol  from tblgallery inner join category on category.id=tblgallery.catid";
+$arrdata=array();
+$resource1=mysql_query($select);
+$k=0;
+
+// code for paging
+$j=0;
+$catid=0;
+while($datagets = mysql_fetch_array($resource1))
+{
+    
+    if($catid==$datagets[catid])
+    {
+	$j=$j+1;
+    }
+    else
+    {
+	$j=0;
+    }
+    
+    $arrdata[$datagets[catid]][$j]['imagepath']=$datagets[imagepath];
+    $arrdata[$datagets[catid]][$j]['heading']=$datagets[heading];
+    $arrdata[$datagets[catid]][$j]['message']=$datagets[message];
+	$arrdata[$datagets[catid]][$j]['bannercol']=$datagets[bannercol];
+
+    $arrdata[$datagets[catid]][$j]['fontcol']=$datagets[fontcol];
+
+    $arrdata[$datagets[catid]][$j]['url']=$datagets[url];
+	
+    $catid=$datagets[catid];
+    $k++;
+    
+}
+
+
+// $arrdata[2][0]['imagepath'];
+?>
+<title>Welcome to Talon Lodge</title>
+ <meta charset="UTF-8" />
+    
+    <meta name="apple-mobile-web-app-capable" content="yes" /> 
+    
+<?php
+
+$select="select * from seo";
+
+$resource=mysql_query($select);
+$counttotal = mysql_num_rows($resource);
+
+while($datagets = mysql_fetch_array($resource))
+	{
+		
+		
+		echo "<title>$datagets[title]</title>
+		<meta http-equiv=\"http://www.alaskaluxurylodge.com/index.html\" name=\"Keywords\" content=\"$datagets[keyword]\" />
+		<meta http-equiv=\"http://www.alaskaluxurylodge.com/index.html\" name=\"Description\" content=\"$datagets[description]\" />
+		<meta http-equiv=\"Content-Type\" content=\"$datagets[content_type]\" />
+		<meta name=\"robots\" content=\"$datagets[robots]\" />
+		<meta name=\"revisit-after\" content=\"$datagets[revisit_after]\" />
+		<meta name=\"Copyright\" content=\"$datagets[copywritte]\" />
+		";
+	
+	}
+
+?>
+   
+
+  
+     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/droptiles.css">
+	<link rel="stylesheet" type="text/css" href="css/MetroJs.css">
+    
+    <script src="js/jquery-1.5.1.min.js" type="text/javascript"></script>
+    
+	<script type="text/javascript" src="Default.aspx_files/Combined.js"></script>
+  	<script type="text/javascript" src="Default.aspx_files/CombinedDashboard.js"></script>
+    
+	<script src="js/MetroJs.lt.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/MetroJs.js"> </script>
+     
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+       
+<link href="css/manual.css" rel="stylesheet" type="text/css">
+<base href="http://www.alaskaluxurylodge.com/" />
+
+</head>
+<body>
+    
+    <div id="body" class="unselectable kinetic-active">
+    <div class="outerrapper"><img src="img/home.jpg" ></div>
+        <div id="navbar" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="pull-left" style="margin-top: 7px; margin-right: 5px;" href="">
+                        <img src="img/logo.png"  /> <span class="tagline">Alaska's most spectacular fishing lodge</span>
+                    </a>
+                          
+                </div>
+            </div>
+        </div>
+
+        <div id="content" style="visibility: visible">
+         
+         <div id="metro-sections-container" class="metro">
+                
+          <div class="metro-sections">
+                    <div class="metro-section">
+                        <div class="tiles">
+
+			
+    <div class="live-tile" data-starts="80px,90%,120px,100%,0px" style="width:240px; height:116px;" data-delay="10000">
+    <div style="width:240px; height:116px;"><a href="<?php echo $arrdata[2][0]['url']; ?>" target="_blank">
+    <span class="thumbtextbase" style="background: <?php echo $arrdata[2][0]['bannercol']; ?>; color:<?php echo $arrdata[2][0]['fontcol']; ?>;"><?php echo $arrdata[2][0]['message']; ?></span>
+    <img src="admin/fileshare/<?php echo $arrdata[2][0]['imagepath']; ?>"></a></div>
+    <div style="width:240px; height:116px;"><a href="<?php echo $arrdata[2][1]['url']; ?>"> <span class="thumbtextbase relaxtext" style="background: <?php echo $arrdata[2][1]['bannercol']; ?>; color:<?php echo $arrdata[2][1]['fontcol']; ?>;"><?php echo $arrdata[2][1]['message']; ?></span><img src="admin/fileshare/<?php echo $arrdata[2][1]['imagepath']; ?>"></a></div>
+    </div>
+
+    <div class="live-tile" style="height:116px; width:240px; overflow:hidden">
+       <a href="<?php echo $arrdata[5][0]['url']; ?>" target="_blank"> <span class="thumbtextbase" style="background: <?php echo $arrdata[5][0]['bannercol']; ?>; color:<?php echo $arrdata[5][0]['fontcol']; ?>;"><?php echo $arrdata[5][0]['message']; ?></span><img src="admin/fileshare/<?php echo $arrdata[5][0]['imagepath']; ?>"/></a>    </div>
+    <div class="live-tile" data-delay="10000" data-starts="80px,90%,120px,100%,0px"  style="width:240px; height:120px" data-direction="horizontal" >
+        <div style="width:240px; height:116px;"><a href="<?php echo $arrdata[6][0]['url']; ?>" target="_blank"><span class="thumbtextbase wtobg" style="background: <?php echo $arrdata[6][0]['bannercol']; ?>; color:<?php echo $arrdata[6][0]['fontcol']; ?>;"><?php echo $arrdata[6][0]['message']; ?></span><img src="admin/fileshare/<?php echo $arrdata[6][0]['imagepath']; ?>" /></a></div>
+        <div style="width:240px; height:116px;"><div class="thumbtextbase wtobg restext" style="background: <?php echo $arrdata[6][1]['bannercol']; ?>; color:<?php echo $arrdata[6][1]['fontcol']; ?>;"><span ><?php echo $arrdata[6][1]['heading']; ?></span>
+        <span class="cntinfo"><?php echo $arrdata[6][1]['message']; ?></span> </div><img src="admin/fileshare/<?php echo $arrdata[6][1]['imagepath']; ?>"></div>
+    </div>
+    
+    <div class="live-tile"  style="width:120px; height:116px;overflow:hidden; "><a href="<?php echo $arrdata[7][0]['url']; ?>" target="_blank"><span class="thumbtextbase wtobg rects" style="background: <?php echo $arrdata[7][0]['bannercol']; ?>; color:<?php echo $arrdata[7][0]['fontcol']; ?>;"><?php echo $arrdata[7][0]['message']; ?></span><img src="admin/fileshare/<?php echo $arrdata[7][0]['imagepath']; ?>" /></a></div>
+    
+    <div class="live-tile"  style="width:120px; height:120px"><a href="<?php echo $arrdata[8][0]['url']; ?>" target="_blank"><span class="thumbtextbase wtobg rects" style="background: <?php echo $arrdata[8][0]['bannercol']; ?>; color:<?php echo $arrdata[8][0]['fontcol']; ?>;"><?php echo $arrdata[8][0]['message']; ?></span><img src="admin/fileshare/<?php echo $arrdata[8][0]['imagepath']; ?>" /></a></div>
+
+    <div class="live-tile"  style="width:120px; height:120px"><a href="<?php echo $arrdata[9][0]['url']; ?>" target="_blank"><span class="thumbtextbase wtobg rects" style="background: <?php echo $arrdata[9][0]['bannercol']; ?>; color:<?php echo $arrdata[9][0]['fontcol']; ?>;"><?php echo $arrdata[9][0]['message']; ?></span><img src="admin/fileshare/<?php echo $arrdata[9][0]['imagepath']; ?>" /></a></div>
+
+    <div class="live-tile"  style="width:120px; height:120px"><a href="<?php echo $arrdata[10][0]['url']; ?>" target="_blank"><span class="thumbtextbase wtobg rects" style="background: <?php echo $arrdata[10][0]['bannercol']; ?>; color:<?php echo $arrdata[10][0]['fontcol']; ?>;"><?php echo $arrdata[10][0]['message']; ?></span><img src="admin/fileshare/<?php echo $arrdata[10][0]['imagepath']; ?>" /></a></div>
+  <div class="live-tile" style="height:248px; width:340px">
+        <ul>
+            <li><a href="<?php echo $arrdata[11][0]['url']; ?>" target="_blank"><img src="admin/fileshare/<?php echo $arrdata[11][0]['imagepath']; ?>"></a></li>
+            <li><a href="<?php echo $arrdata[12][0]['url']; ?>" target="_blank"><img src="admin/fileshare/<?php echo $arrdata[12][0]['imagepath']; ?>"></a></li>
+            <li><a href="<?php echo $arrdata[13][0]['url']; ?>" target="_blank"><img src="admin/fileshare/<?php echo $arrdata[13][0]['imagepath']; ?>"></a></li>
+            <li><a href="<?php echo $arrdata[14][0]['url']; ?>" target="_blank"><img src="admin/fileshare/<?php echo $arrdata[14][0]['imagepath']; ?>"></a></li>
+        </ul>
+    </div>
+    
+     <div class="live-tile" data-delay="30000" data-direction="horizontal" data-starts="80px,90%,120px,100%,0px" style="width:240px; height:116px;position:absolute; top:124px">
+        <div style="width:240px; height:116px;"><a href="<?php echo $arrdata[3][0]['url']; ?>" target="_blank"><span class="thumbtextbase wtobg" style="background: <?php echo $arrdata[3][1]['bannercol']; ?>; color:<?php echo $arrdata[3][1]['fontcol']; ?>;"><?php echo $arrdata[3][1]['message']; ?></span><img src="admin/fileshare/<?php echo $arrdata[3][1]['imagepath']; ?>"></a></div>
+
+          <div style="width:240px; height:116px;" style="background: <?php echo $arrdata[3][0]['bannercol']; ?>; color:<?php echo $arrdata[3][0]['fontcol']; ?>;"><a href="<?php echo $arrdata[3][0]['url']; ?>" target="_blank"><img src="admin/fileshare/<?php echo $arrdata[3][0]['imagepath']; ?>"></a></div>
+    </div>
+
+     <div class="live-tile" data-delay="60000" data-starts="80px,90%,120px,100%,0px" style="width:240px; height:116px; position:absolute; top:124px; left:248px">
+        <div style="width:240px; height:120px"><a href="<?php echo $arrdata[15][0]['url']; ?>" target="_blank"> <span class="thumbtextbase relaxtext" style="background: <?php echo $arrdata[15][1]['bannercol']; ?>; color:<?php echo $arrdata[15][1]['fontcol']; ?>;"><?php echo $arrdata[15][1]['message']; ?></span><img src="admin/fileshare/<?php echo $arrdata[15][1]['imagepath']; ?>"></a></div>
+ 
+        <div style="width:240px; height:116px;"><a href="<?php echo $arrdata[15][0]['url']; ?>" target="_blank"><div class="thumbtextbase wtobg restext" style="background: <?php echo $arrdata[15][0]['bannercol']; ?>; color:<?php echo $arrdata[15][0]['fontcol']; ?>;"><span><?php echo $arrdata[15][0]['heading']; ?></span>
+        <span class="cntinfo"><?php echo $arrdata[15][0]['message']; ?></span> </div><img src="admin/fileshare/<?php echo $arrdata[15][0]['imagepath']; ?>"></a></div>
+    </div>
+        <div class="live-tile" style="width:116px; height:116px; position:absolute; top:124px; left:496px"><a href="<?php echo $arrdata[16][0]['url']; ?>" target="_blank"><span class="thumbtextbase wtobg rects" style="background: <?php echo $arrdata[16][0]['bannercol']; ?>; color:<?php echo $arrdata[16][0]['fontcol']; ?>;"><?php echo $arrdata[16][0]['message']; ?></span><img src="admin/fileshare/<?php echo $arrdata[16][0]['imagepath']; ?>" / ></a></div>
+
+    <div class="live-tile"  style="width:116px; height:116px; position:absolute; margin-left:4px; top:124px; left:620px"><a href="<?php echo $arrdata[17][0]['url']; ?>" target="_blank" ><span class="thumbtextbase wtobg rects" style="background: <?php echo $arrdata[17][0]['bannercol']; ?>; color:<?php echo $arrdata[17][0]['fontcol']; ?>;"><?php echo $arrdata[17][0]['message']; ?></span><img src="admin/fileshare/<?php echo $arrdata[17][0]['imagepath']; ?>"></a></div>
+
+        
+        <div class="live-tile" data-delay="18000" data-direction="horizontal" style="width:248px; height:116px; position:absolute; top:124px; left:744px">
+                <div style="width:248px; height:120px"><a href="<?php echo $arrdata[19][0]['url']; ?>" target="_blank"><span class="thumbtextbase" style="background: <?php echo $arrdata[19][1]['bannercol']; ?>; color:<?php echo $arrdata[19][1]['fontcol']; ?>;"><?php echo $arrdata[19][1]['message']; ?></span><img src="admin/fileshare/<?php echo $arrdata[19][1]['imagepath']; ?>" width="248px" height="116"></a></div>
+
+                <div style="width:248px; height:116px;"><a href="<?php echo $arrdata[19][0]['url']; ?>" target="_blank"> <div class="thumbtextbase wtobg restext"><span style="background: <?php echo $arrdata[19][0]['bannercol']; ?>; color:<?php echo $arrdata[19][0]['fontcol']; ?>;"><?php echo $arrdata[19][0]['heading']; ?></span>
+                <span class="cntinfo" style="background: <?php echo $arrdata[19][0]['bannercol']; ?>; color:<?php echo $arrdata[19][0]['fontcol']; ?>;"><?php echo $arrdata[19][0]['message']; ?></span> </div><img src="admin/fileshare/<?php echo $arrdata[19][0]['imagepath']; ?>" width="248px" height="116"></a></div>
+            </div>
+    
+     <div class="live-tile" data-direction="horizontal" data-starts="80px,90%,120px,100%,0px"  style="width:240px; height:116px;position:absolute; top:248px">
+        <div style="width:240px; height:116px;"><a href="<?php echo $arrdata[20][0]['url']; ?>" target="_blank"><span class="thumbtextbase wtobg" style="background: <?php echo $arrdata[20][0]['bannercol']; ?>; color:<?php echo $arrdata[20][0]['fontcol']; ?>;"><?php echo $arrdata[20][0]['message']; ?> </span><img src="admin/fileshare/<?php echo $arrdata[20][0]['imagepath']; ?>"/></a></div>
+       
+        <div style="width:240px; height:116px;"><a href="<?php echo $arrdata[20][0]['url']; ?>" target="_blank"><span class="thumbtextbase wtobg" style="background: <?php echo $arrdata[20][1]['bannercol']; ?>; color:<?php echo $arrdata[20][1]['fontcol']; ?>;"><?php echo $arrdata[20][1]['message']; ?></span><img src="admin/fileshare/<?php echo $arrdata[20][1]['imagepath']; ?>"/></a></div>
+    </div>
+    
+    
+    
+    
+    <div class="live-tile" style="width:240px; height:116px; position:absolute; top:248px; left:248px;overflow:hidden">
+        <a href="<?php echo $arrdata[21][0]['url']; ?>" target="_blank"><span class="thumbtextbase wtobg" style="background: <?php echo $arrdata[21][0]['bannercol']; ?>; color:<?php echo $arrdata[21][0]['fontcol']; ?>;"><?php echo $arrdata[21][0]['message']; ?></span><img src="admin/fileshare/<?php echo $arrdata[21][0]['imagepath']; ?>"></a>   </div>
+    
+     <div class="live-tile" data-delay="50000" data-starts="80px,90%,120px,100%,0px"  style="width:240px; height:116px; position:absolute; top:248px; left:496px" data-direction="horizontal" >
+     <div style="width:240px; height:116px;"><a href="<?php echo $arrdata[23][0]['url']; ?>" target="_blank">  <span class="thumbtextbase relaxtext stay" style="background: <?php echo $arrdata[23][0]['bannercol']; ?>; color:<?php echo $arrdata[23][0]['fontcol']; ?>;"><?php echo $arrdata[23][0]['message']; ?></span> <img src="admin/fileshare/<?php echo $arrdata[23][0]['imagepath']; ?>"></a></div>
+        
+        <div style="width:240px; height:116px;"><a href="<?php echo $arrdata[23][0]['url']; ?>" target="_blank"><div class="thumbtextbase wtobg restext stay" ><span style="background: <?php echo $arrdata[23][1]['bannercol']; ?>; color:<?php echo $arrdata[23][1]['fontcol']; ?>;"><?php echo $arrdata[23][1]['heading']; ?></span>
+        <span class="cntinfo" style="background: <?php echo $arrdata[23][1]['bannercol']; ?>; color:<?php echo $arrdata[23][1]['fontcol']; ?>;"><?php echo $arrdata[23][1]['message']; ?></span> </div><img src="admin/fileshare/<?php echo $arrdata[23][1]['imagepath']; ?>"></a></div>
+    </div>
+    
+    <div class="live-tile" data-delay="35000" data-direction="horizontal" style="width:248px; height:116px; position:absolute; top:248px; left:744px">
+        <div style="width:248px; height:116px" ><a href="<?php echo $arrdata[24][0]['url']; ?>"><img src="admin/fileshare/<?php echo $arrdata[24][0]['imagepath']; ?>" width="248px" height="116"></a></div>
+        <div style="width:248px; height:116px;"><a href="<?php echo $arrdata[24][0]['url']; ?>"><img src="admin/fileshare/<?php echo $arrdata[24][1]['imagepath']; ?>" width="248px" height="116"></a></div>
+    </div>
+    
+    
+    <div class="live-tile" data-starts="80px,90%,120px,100%,0px" data-delay="30000"  style="width:240px; height:116px; position:absolute; top:372px; left:0px">
+       
+       <div style="width:240px; height:120px"><a href="<?php echo $arrdata[25][0]['url']; ?>" target="_blank"> <span class="thumbtextbase wtobg context" style="background: <?php echo $arrdata[25][0]['bannercol']; ?>; color:<?php echo $arrdata[25][0]['fontcol']; ?>;"><?php echo $arrdata[25][0]['message']; ?></span><img src="admin/fileshare/<?php echo $arrdata[25][0]['imagepath']; ?>"></a></div>
+       
+       <div style="width:240px; height:116px;"><a href="<?php echo $arrdata[25][0]['url']; ?>" target="_blank"> <span class="thumbtextbase wtobg" style="background: <?php echo $arrdata[25][1]['bannercol']; ?>; color:<?php echo $arrdata[25][1]['fontcol']; ?>;"><?php echo $arrdata[25][1]['message']; ?></span><img src="admin/fileshare/<?php echo $arrdata[25][1]['imagepath'];
+	    ?>"></a></div>
+    </div>
+    
+    <div class="live-tile" style="height:116px; width:240px; overflow:hidden; position:absolute; top:372px; left:248px">
+    <a href="<?php echo $arrdata[26][0]['url']; ?>" target="_blank"> <span class="thumbtextbase wtobg cntno" style="background: <?php echo $arrdata[26][0]['bannercol']; ?>; color:<?php echo $arrdata[26][0]['fontcol']; ?>;"><?php echo $arrdata[26][0]['message']; ?></span><img src="admin/fileshare/<?php echo $arrdata[26][0]['imagepath']; ?>" /> </a>    </div>
+
+       <div class="live-tile"  style="width:120px; height:116px;overflow:hidden;  position:absolute; top:372px; left:496px"><a href="<?php echo $arrdata[27][0]['url']; ?>" target="_blank"><span class="thumbtextbase wtobg rects" style="background: <?php echo $arrdata[27][0]['bannercol']; ?>; color:<?php echo $arrdata[27][0]['fontcol']; ?>;"><?php echo $arrdata[27][0]['message']; ?></span><img src="admin/fileshare/<?php echo $arrdata[27][0]['imagepath']; ?>" /></a></div>
+       
+       
+       <div class="live-tile"  style="width:120px; height:116px;overflow:hidden;  position:absolute; top:372px; left:744px"><a href="<?php echo $arrdata[28][0]['url']; ?>" target="_blank"><span class="thumbtextbase wtobg rects" style="background: <?php echo $arrdata[28][0]['bannercol']; ?>; color:<?php echo $arrdata[28][0]['fontcol']; ?>;"><?php echo $arrdata[28][0]['message']; ?></span> <img src="admin/fileshare/<?php echo $arrdata[28][0]['imagepath']; ?>" /> </a></div>
+</div>
+    
+  
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".live-tile,.flip-list").liveTile();
+        });
+    </script>
+        </div>
+        
+        <!--div class="metro-section">Welcome to talon lodge</div-->
+                </div>
+            </div>
+                       
+            
+      </div>
+        
+    </div>
+
+
+</body>
+
+</html>

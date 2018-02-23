@@ -1,0 +1,33 @@
+<?php
+$tr = array(
+	'id' => 'ID',
+	'title' => 'Title',
+	'description' => 'Description',
+	'one_bedroom_description' => 'Description for one bedroom room (static)',
+	'two_bedroom_description' => 'Description for two bedroom room (static)',
+	'main-image' => 'Main Image',
+	'priority' => 'Priority',
+	'one_bedroom_title' => 'One bedroom popup title',
+	'two_bedroom_title' => 'Two bedroom popup title',
+	'one_bedroom_image' => 'Image for one bedroom',
+	'two_bedroom_image' => 'Image for two bedroom',
+	'one_bedroom_small_image' => 'One bedroom popup footer image',
+	'two_bedroom_small_image' => 'Two bedroom popup footer image',
+	'one_bedroom_popup_description' => 'Description for one bedroom room (popup)',
+	'two_bedroom_popup_description' => 'Description for two bedroom room (popup)',
+	'one_popup_image_description' => 'One bedroom popup image description',
+	'two_popup_image_description' => 'Two bedroom popup image description',
+	'one_popup' => 'One bedroom popup window visibility',
+	'two_popup' => 'Two bedroom popup window visibility',
+	'is_published' => 'Visibility',
+	'main_image' => 'Main image',
+	'main_image_alt' => 'Main image alt',
+	'one_bedroom_image_alt' => 'One bedroom image alt',
+	'two_bedroom_image_alt' => 'Two bedroom image alt',
+	'one_bedroom_small_image_alt' => 'One bedroom popup footer image alt',
+	'two_bedroom_small_image_alt' => 'Two bedroom popup footer image alt',
+	'url_one' => 'One bedroom booking URL',
+	'url_two' => 'Two bedroom booking URL',
+	
+	);
+	?>

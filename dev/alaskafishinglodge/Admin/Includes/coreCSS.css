@@ -1,0 +1,390 @@
+.body
+{
+	Background-Color:#7b79ad; margin :0px;
+	
+	}
+
+
+.Grid_HeaderStyle
+{
+	
+	Color:#000000;
+	Background-Color:#E2E2E2;
+	Font-Family:Verdana,Arial; 
+	Font-Weight:Bold; 
+	Font-Size:12px; 
+	
+	
+}
+/* AUTOCOMPLETE 
+.AutoComplete_List{background-color: #FFF; margin: 0px!important; border: 1px solid #999; cursor: pointer; overflow: auto; text-align: left; list-style-type: none; max-height: 200px;}
+.AutoComplete_ListItem{color: #666; padding: 1px; border-bottom: 1px solid #ddd}
+.AutoComplete_ListItemHilite{color: #000; padding: 1px; border-bottom: 1px solid #ddd;}
+.AutoComplete_ListItemHiliteText{ font-weight:bolder; text-decoration:underline; font-size:11px }
+*/
+.Grid_ItemStyle      
+{	
+	
+	Background-Color:#eeeeee ;
+	Color:#000000;
+	Font-family:Verdana,Arial;
+	Font-Weight: normal;
+	Font-Size:12px;
+}
+
+.DropDownList
+{
+	color:#000000;
+	font-size:8pt;
+	font-family:Verdana, Helvetica, sans-serif;
+	letter-spacing:0px;
+	font-weight:normal;
+	border:solid 1px #e4e4e4 
+	
+}
+
+.SimpleText
+{
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:black;
+}
+
+.Text
+{
+	color:#000000;
+	font-size:8pt;
+	font-family:verdana;
+	letter-spacing:0px
+}
+
+.Message
+{
+	background-color:#FFFFFF;
+	color:RED;
+	width:800;
+	FONT-WEIGHT:BOLD;
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:9pt;
+	font-weight:bold;
+	
+}
+.Messageforpoll
+{
+	background-color:#FFFFFF;
+	color:RED;
+	width:800;
+	FONT-WEIGHT:BOLD;
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:9pt;
+	font-weight:bold;
+	background:transparent;
+	 padding-left:20px;
+	
+}
+.DateAndDollarLabel
+{
+    COLOR:#FFFFFF;
+    font-family:Verdana, Helvetica, sans-serif;
+    FONT-SIZE: 7pt;
+    FONT-WEIGHT: normal
+}
+.HEADING
+{
+	color:#485D70;
+	font-weight:bold;
+	font-size:10pt;
+	font-family:Verdana, Helvetica, sans-serif;
+	letter-spacing:0px
+}
+.TextLabel
+{
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:11px;	
+	color:#600012;
+}
+.TextLabelHeading
+{
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight :bold ;
+	color:#600012;
+}
+.TextLabel5
+{
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:11px;	
+	color:#600012;
+
+}
+
+.TextLabellogin
+{
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:14px;	
+	font-weight:bold;
+	color:#600012;
+}
+
+.LightTextLabel
+{
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:12px;
+	color:#600012;
+}
+
+.SignatureLabel
+{
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	color:#7F2072;
+}
+
+.RowHeader
+{
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	color:#600012;
+	background-color:#BFBFBF;
+}
+.RowHeaderresponse
+{
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:bolder;
+	color:#600012;
+	background-color:#BFBFBF;
+}
+
+.formfooter
+{
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color:#e4e4e4;
+}
+
+
+.TableBorder
+{
+	border-color :#485D70;
+	border-style :solid; 
+	border-width :1px; 
+}
+
+.Button
+{
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#FFFFFF;
+	width:105px;  
+	background-color:#464646;
+	border:solid 1px #cfcfcf;
+	cursor:pointer;
+	}
+
+.MsgTextBox
+{
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:red;
+	width:500px;  
+	
+	text-align:center;
+	border-style:none;
+	 
+}
+
+.MsgTextBox_L
+{
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:red;
+	width:500px;  
+	background-color:white;	
+	text-align:center;	
+	border-style:none;	
+}
+
+.TextBox
+{
+    font-family:Verdana, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    border:solid 1px #e4e4e4 
+}
+
+.TextAreaBox
+{
+    font-family:Verdana, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    TEXT-TRANSFORM: Capitalize;
+    WIDTH: 330px;
+}
+
+SELECT.ComboBox
+{
+    font-family:Verdana, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    TEXT-TRANSFORM: uppercase;
+    TEXT-ALIGN:center;
+}
+
+.DateLabel
+{
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:9px;
+	font-weight: lighter;
+	color:#217d63;
+}
+
+
+
+.RedLabel
+{
+    COLOR: red;
+    font-family:Verdana, Helvetica, sans-serif;
+    FONT-SIZE: 10px;
+    FONT-WEIGHT: bold
+}
+
+.QuoteMessage
+{
+    COLOR: #9a0000;
+    font-family:Verdana, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: bold
+}
+
+.RequiredField
+{
+    COLOR: RED;
+    font-family:Verdana, Helvetica, sans-serif;
+    FONT-SIZE: 7pt;
+    FONT-WEIGHT: normal
+}
+
+.HiddenClass{
+	display:none;
+}
+
+.HiddenTextBox
+{
+	background-color :White;
+	border :none;
+	color :White ;
+}
+.textBox
+{
+	border: 1px solid #CFCFCF;
+	font-family:Tahoma; 
+		font-size:11px; 
+		color:#666666; 
+		margin-left: 4px;
+}	
+	
+.imagebtm
+{
+	margin-bottom:10px;
+	text-align:center;
+}
+
+.TextLabel2
+{
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: black;
+	text-decoration: underline;
+}
+.logmaintext
+{
+	PADDING-BOTTOM: 10px; COLOR: #600012;font-size:15pt;
+}
+.logsmalltext
+{
+	FONT-SIZE: 11px;
+	}
+
+.TextLabelMainpage
+{
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	color:#600012;
+	text-align :left ;
+	margin-left :10px;
+}
+.TextLabelwelcome
+{
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#600012;
+	margin-left :55px;
+}
+
+.LinkMainPage
+{
+	color:#600012;
+	font-weight:bold;
+	text-decoration:none;
+	
+	
+}
+.LinkMainPage:hover
+{
+ 	
+}
+.AdminPageHeading
+{
+	
+	background-color:#afafaf;
+	color:White;font-weight:bold;
+	text-align:center;
+	height:18px;
+}
+.AdminPageHeading123
+{
+	
+	background-color:#ffffff;
+	color:White;font-weight:bold;
+	text-align:center;
+	height:18px;
+}
+.AdminPageHeading1
+{
+	
+	background-color:#600012;
+	color:White;font-weight:bold;
+	text-align:left;
+	height:18px;
+	padding-left:10px;
+}
+.GridItemStyle
+{
+	padding-left:7px;
+	
+}
+.divheight
+{
+	height:150px;
+	overflow:auto;
+	 
+}
+
+.Category
+{
+	font-weight:bold; 
+}
+p#pageNav{ margin-left:25px; margin-bottom:20px;}
+p#pageNav a{padding:3px;background:#fff;border:solid 1px #3f73c6;color:#3f73c6;text-decoration:none;}
+p#pageNav a:hover{background-color:#A7C8E6;color:#fff;}
+p#pageNav a.currentPage{color:#fff;background-color:#A7C8E6;}
+p#pageNav a.inactive{color:#aaa;border:1px solid #aaa;}

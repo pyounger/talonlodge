@@ -1,0 +1,176 @@
+<?php
+ob_start();
+//include('config.php');
+include('session.php');
+include('header.php');
+//session_start();
+include("../asset/databaseclass.php");
+$task=$_REQUEST['task'];
+$id=$_REQUEST['id'];
+if($task=="del")
+{
+	$select="DELETE from tblgallery WHERE id='$id'";
+	$resource=mysql_query($select);
+}
+
+$selectcat="select * from category";
+$resourcecat=mysql_query($selectcat);
+
+
+
+
+
+?>
+<script type="text/javascript">
+
+
+function filterbycat(catid)
+{
+	
+	window.location ="viewfileshare.php?catid="+catid;
+	
+	
+}
+
+
+
+function confirm_delete(url,id)
+{	
+	if (confirm("Are you sure you want to delete the record?")==true)
+	{
+		location.href=url+id;
+	}
+ 	else
+	{
+		 return false;
+  	}
+	return false;
+}
+</script>
+
+<table border="0" width="100%"  cellspacing="2" cellpadding="0">
+<tr>
+	<td>
+		<h1 class="heading_class">Filter by Category</h1>
+		
+	</td>
+	<td>
+	<select id="cat_id" name="cat_id" onchange="filterbycat(this.value)">
+		
+<?php
+
+	while($datagetscat = mysql_fetch_array($resourcecat))
+	{
+
+?>
+	 <option value="<?php echo $datagetscat['id']; ?>"><?php echo $datagetscat['cat_name']; ?></option>
+	
+<?php    
+	}
+?>
+	</select>
+		
+		
+	</td>
+</tr>
+<tr>
+	<td>
+		<h1 class="heading_class">Image Gallery</h1>
+	</td>
+</tr>
+
+<tr><td>
+<div id="divviewinstitute" name="divviewinstitute" style="border:0;width:100%" >
+<table id="tblviewinstitute" name="tblviewinstitute" border="0" width="100%"  cellspacing="0" cellpadding="0" cols="2">
+<tr><td colspan="3" style="">
+<!--<div align="right"><a href="add_editbulletin.php" >Add Crime Bulletin</a></div>
+<a href="javascript:void(0);" onclick="fieldblankcat()"></a>--></td>
+<td width="102%" style=\"align:right\">
+<div class="button"><a href="add_editfileshare.php" style=" color:#fff; text-decoration:none;">Add Image</a></div>
+</td></tr>
+<?php
+if(isset($_SESSION['user_id']))
+{
+	$userid=$_SESSION['user_id'];
+
+}
+
+$select="select *,tblgallery.id as galid ,category.id as catid from tblgallery inner join category on category.id=tblgallery.catid  ";
+
+
+
+$resource=mysql_query($select);
+$counttotal = mysql_num_rows($resource);
+if($counttotal>=1)
+{
+?>
+
+
+<ul class="pagelinkmain">
+<li style="width:230px">Title</li>
+<li style="width:250px">Category</li>
+<li>Action</li>
+<li></li>
+</ul>
+
+<?php
+}
+
+$catid='';
+$catid=$_REQUEST['catid'];
+
+
+if($catid!='')
+{
+	$_REQUEST['page']=0;
+	$catid=$_REQUEST['catid'];
+	$select=$select." where catid=$catid";
+}
+
+
+
+
+//	code for paging
+	$pg = $_REQUEST['page'];
+		
+if($pg == "" || $pg == 1)
+	{ $pg = 0;}
+else
+	{ $pg = $pg*$numrecords - $numrecords;}
+	
+	
+$select1 = $select." order by galid desc LIMIT ".$pg.",".$numrecords;
+
+echo $select1;die;
+
+$resource1=mysql_query($select1);
+	//	code for paging
+while($datagets = mysql_fetch_array($resource1))
+{
+ 	echo "<tr>
+	<td class=\"pagebest\"><img src='fileshare/$datagets[thumbpath]' name='img1' id='img1'  /></td>
+	
+	<td class=\"cat\">$datagets[cat_name]</td>
+	<td>&nbsp;<a href=\"javascript:void(0);\" onclick=\"confirm_delete('viewfileshare.php?task=del&','id=$datagets[galid]')\" class=\"deletebtn\">Delete</a></td>
+</tr>";
+
+}
+?>
+	
+		<!--code for paging-->
+			
+	<tr>
+		<td colspan="3" align="center">
+			<?php
+				//This is the actual usage of function, It prints the paging links
+				doPages($numrecords, extractfilename($_SERVER['REQUEST_URI']), '', $counttotal);
+			?>
+		</td>
+	</tr>
+			
+	<!--	code for paging-->
+</table></div></td></tr></table>
+<?php
+	include('footer.php');
+	ob_end_flush();
+?>

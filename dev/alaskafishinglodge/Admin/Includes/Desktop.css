@@ -1,0 +1,56 @@
+﻿/* CSS Document */
+/*
+File name: login.css
+CSS document designed by YourDomainCMS
+Purpose: This file contain those classes which are required for login screen. 
+Therefore, it is required to include only on the login page nowhere else
+*/
+
+/*===================================
+ DESKTOP CLASSES 
+ ===================================*/
+{
+	FILTER: alpha(opacity=85);
+}	
+
+#desktop_content_div
+{
+}
+
+.my_icon
+{
+	
+
+	
+}	
+.pressNo
+{
+
+}
+
+.pressDown
+{
+	padding-top: 2px;
+	padding-left: 1px;
+}
+
+.my_icon_hover
+{
+	
+}
+	
+
+#desktop_content_div
+{
+	height: inherit !important;
+	height: auto;
+	padding: 5px;
+	margin: 9px;
+	background-color: #E2F3F3;
+	border: 1px solid #C1E3E3;
+}
+
+.desktop_icon_table
+{
+	background-color: #C1E3E3;
+}

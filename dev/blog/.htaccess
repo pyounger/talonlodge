@@ -1,0 +1,14 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /blog/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /blog/index.php [L]
+</IfModule>
+
+# END WordPress
+# Set PHP handler to application/x-httpd-phpbeta on Thu Jan  7 14:27:52 MST 2016.
+AddHandler application/x-httpd-phpbeta .php

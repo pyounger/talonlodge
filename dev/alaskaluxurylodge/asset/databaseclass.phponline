@@ -1,0 +1,10 @@
+<?php 
+
+$database_host='harry.db.9650411.hostedresource.com';
+$database_username='harry';
+$database_password='Vipeshdb12';
+$database_name='harry';
+$connection=mysql_connect($database_host, $database_username, $database_password, TRUE);
+mysql_select_db($database_name, $connection);
+
+?>
