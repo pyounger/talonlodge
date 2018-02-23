@@ -1,0 +1,4 @@
+[13-Apr-2014 14:26:45] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'BeaDBcon'@'localhost' (using password: YES) in /home2/talonlod/public_html/lib/uploaded/openCon.php on line 6
+[13-Apr-2014 17:03:29] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'BeaDBcon'@'localhost' (using password: YES) in /home2/talonlod/public_html/lib/uploaded/openCon.php on line 6
+[04-Sep-2014 18:13:45 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'BeaDBcon'@'localhost' (using password: YES) in /home2/talonlod/public_html/lib/uploaded/openCon.php on line 6
+[23-Dec-2014 03:40:19 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'BeaDBcon'@'localhost' (using password: YES) in /home2/talonlod/public_html/lib/uploaded/openCon.php on line 6

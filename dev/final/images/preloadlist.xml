@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preloader basedir="http://static.askapache.com/f/flv/">
+  <flv path="404-error-page.flv
+  <flv path="404-google-plugin.flv
+  <flv path="anonymous.flv
+  <flv path="create-boot-ini.flv
+  <flv path="install-recovery-console.flv
+  <flv path="mysql-backup-script.flv
+  <flv path="php-ajax-shell.flv
+  <flv path="setup-recovery-console.flv
+</preloader>
