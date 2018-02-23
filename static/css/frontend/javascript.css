@@ -1,0 +1,482 @@
+/*Datepicker*/
+.ui-datepicker, .ui-widget, .ui-widget-content, .ui-helper-clearfix, .ui-corner-all	
+	{
+	width: 234px!important;
+	border: none;
+	z-index: 9999!important;
+	background: url('static/images/frontend/new_layout/header/datepicker-bg.png') left bottom no-repeat;
+	font-family: Arial;
+	font-size: 1.3em;
+	padding: 0;
+	color: #332a1f;
+	}
+
+.ui-datepicker-calendar thead tr
+	{
+	background: #a93102;
+	color: #f8f8f8;
+	text-transform: uppercase;
+	}
+	.ui-datepicker th
+		{
+		padding: 0.3em;
+		}
+div.ui-datepicker table.ui-datepicker-calendar tbody tr td a
+	{
+	display: block;
+	width: 14px;
+	color: #332a1f;
+	font-family: Times;
+	border-radius: 35px;
+	text-align: center;
+	}
+div.ui-datepicker table.ui-datepicker-calendar tbody tr td.ui-datepicker-today a
+	{
+	color: white;
+	background: #a93101;
+	}
+div.ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-state-active
+	{
+	}
+	
+.ui-state-default, .ui-state-highlight
+	{
+	}
+.ui-datepicker-header
+	{
+	border: none;
+	background: none;
+	}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+	{
+	background: none;
+	border: none;
+	}
+.ui-datepicker-header a.ui-datepicker-prev 
+	{
+	top: 18px;
+	left: 13px;
+	width: 5px!important;
+	height: 8px;
+	background: transparent url('static/images/frontend/new_layout/header/datepicker-buttons.png') left top no-repeat;
+	}
+		.ui-datepicker-header a.ui-datepicker-prev:hover
+			{
+			border: none;
+			background-position: left bottom;
+			}
+.ui-datepicker-header a.ui-datepicker-prev span
+	{
+	background-position: left top;
+	}
+	
+.ui-datepicker-header a.ui-datepicker-next 
+	{
+	top: 18px;
+	right: 13px;
+	width: 5px!important;
+	height: 8px;
+	background: transparent url('static/images/frontend/new_layout/header/datepicker-buttons.png') right top no-repeat;
+	}
+		.ui-datepicker-header a.ui-datepicker-next:hover
+			{
+			border: none;
+			background-position: right bottom;
+			}
+				
+	.ui-datepicker-header a.ui-datepicker-prev,
+	.ui-datepicker-header a.ui-datepicker-next
+		{
+		cursor: pointer;
+		}
+		.ui-datepicker-title
+			{
+			font-family: "Times New Roman";
+			color: #221e1f;
+			font-size: 16px;
+			font-weight: normal;
+			}
+		.ui-datepicker 
+			{
+			}
+			.ui-datepicker table tbody tr:first-child td span
+				{
+				padding-top: 13px!important;
+				}
+			.ui-datepicker table tbody tr td
+				{
+				height: 18px;
+				}
+			.ui-datepicker table tbody tr td:first-child span
+				{
+				padding: 0 0 0 7px;
+				}
+			.ui-datepicker table tbody tr td:last-child span
+				{
+				padding: 0 7px 0 0;
+				}
+			.ui-datepicker table tbody tr td a
+				{
+				float: right;
+				text-align: left;
+				padding-right: 4px;
+				padding-left: 2px;
+				}
+			.ui-datepicker table thead tr th span
+				{
+				display: block;
+				width: 4px;
+				padding-top: 4px;
+				padding-bottom: 4px;
+				padding-left: 12px;
+				text-align: left;
+				font-weight: normal;
+				font-size: 14px;
+				color: white;
+				font-family: Times New Roman;
+				}		
+	.ui-datepicker-unselectable span.ui-state-default 
+		{	
+		display: block;
+		color: #332A1F;
+		text-align: left;
+		float: right;
+		text-align: left;
+		padding-right: 4px;
+		padding-left: 2px;
+		font-family: Times New Roman;
+		}
+	.ui-datepicker-week-end
+		{
+		padding: 0 8px 0 0!important;
+		}
+	.ui-datepicker-calendar thead tr th:first-child
+		{
+		padding: 0 0 0 8px!important;
+		}
+		#ui-datepicker-div
+			{
+			padding-bottom: 10px;
+			}
+			
+
+/*
+Carousel
+*/
+
+.h-gallery-wrapper
+	{
+	position: relative;
+	margin: 50px 0 55px 25px;
+	}
+	
+.h-gallery-wrapper div.jcarousel-skin-tango .jcarousel-container 
+	{
+	border: none;
+	border-radius: 0;
+	background: none;
+	padding: 0;
+	
+	}
+	.h-gallery-wrapper div.jcarousel-skin-tango .jcarousel-clip-horizontal
+		{
+		width: 933px;
+		margin: 0 0 0 5px;
+		height: 90px;
+		}
+	.h-gallery-wrapper div.jcarousel-skin-tango .jcarousel-item
+		{
+		margin: 0 0 0 1px;
+		padding: 4px 0 0 2px;
+		width: 130px;
+		height: 88px;			
+		background: transparent url('static/images/frontend/gallery/sprite-gallery-border.png') left -92px no-repeat;
+		}
+		.h-gallery-wrapper div.jcarousel-skin-tango .jcarousel-item.hover,
+		.h-gallery-wrapper div.jcarousel-skin-tango .jcarousel-item:hover
+			{
+			cursor: pointer;
+			background-position: left 2px;
+			}
+		.jcarousel-skin-tango .jcarousel-item-horizontal {
+			margin-left: 0;
+			margin-right: 3px;
+		}	
+	.h-gallery-wrapper div.jcarousel-skin-tango .jcarousel-next-horizontal 
+		{
+		top: 35px;
+		left: 942px;
+		background: transparent url('static/images/frontend/gallery/sprite-gallery-button.png') right top no-repeat;
+		height: 20px;
+		width: 10px;
+		}
+	.h-gallery-wrapper div.jcarousel-skin-tango .jcarousel-prev-horizontal 
+		{
+		top: 35px;
+		left: -17px;
+		background: transparent url('static/images/frontend/gallery/sprite-gallery-button.png') left top no-repeat;
+		height: 20px;
+		width: 10px;
+		}
+	.h-gallery-wrapper div.jcarousel-skin-tango .jcarousel-prev-horizontal:hover
+		{
+		background-position: left -21px;
+		cursor: pointer;
+		}
+	.h-gallery-wrapper div.jcarousel-skin-tango .jcarousel-next-horizontal:hover
+		{
+		background-position: right -21px;
+		}
+/*
+ Cusel
+*/
+
+.cusel,
+.cuselFrameRight,
+.jScrollPaneDrag,
+.jScrollArrowUp,
+.jScrollArrowDown 
+	{
+	background: url('static/images/frontend/new_layout/header/bg-select.png') left top no-repeat;
+	}
+.cuselOpen .cuselFrameRight
+	{
+	background-position: right bottom;
+	}
+.cuselFrameRight
+	{
+	background-position: right top;
+	}
+.cusel .cusel-scroll-wrap
+	{
+	background: white;
+	}
+.cusel .cusel-scroll-wrap-b
+	{
+	padding: 0 0 3px 0;
+	background: url('static/images/frontend/new_layout/header/bg-cusel-b.png') left bottom no-repeat
+	}
+/*
+	Fancybox
+*/
+#fancy_close
+	{
+	top: -27px;
+	right: -30px;
+	background: url('static/images/frontend/page-gallery/button-close.png')!important;
+	}
+#fancy_left, #fancy_right
+	{
+	width: 32px;
+	background: url('static/images/frontend/page-gallery/sprite-gallery-buttons.png') no-repeat;
+	}
+#fancy_left
+	{
+	top: 230px;
+	left: -40px;
+	}
+#fancybox-right
+	{
+	top: 230px;
+	right: -40px;
+	background-position: top right;
+	}
+#fancybox-title-over 
+	{
+	display: none;
+	}
+#fancybox-outer
+	{
+	}
+#fancybox-content
+	{
+	
+	}
+/*
+	Anything Slider
+*/
+.anythingSlider
+	{
+	width: 388px;
+	height: 255px;
+	}
+.anythingSlider .wrapper
+	{
+	margin: 0;
+	width: 388px;
+	height: 235px;
+	}
+.anythingSlider .wrapper ul
+	{
+	border-top: none;
+	}
+.anythingSlider ul li
+	{
+	width: 388px;
+	}
+	
+	
+.ourstorySlider
+	{
+	width: 705px;
+	height: 345px;
+	}
+.ourstorySlider .wrapper
+	{
+	margin: 0;
+	width: 705px;
+	height: 355px;
+	}
+.ourstorySlider .wrapper ul
+	{
+	background: none;
+	border: none;
+	}
+.ourstorySlider ul li
+	{
+	width: 705px;
+	height: 175px;
+	}
+.ourstorySlider div#thumbNav
+	{
+	display: none;
+	top: 0;
+	left: 0;
+	}
+	.ourstorySlider.one-page div#thumbNav
+		{
+		display: none;
+		}
+#thumbNav
+	{
+	top: 240px;
+	left: -138px;
+	}
+#thumbNav a
+	{
+	height: 8px;
+	background: url('static/images/frontend/articles/sprite-articles-gallery-button.png') left bottom no-repeat;
+	}
+#thumbNav a:hover
+	{
+	background: url('static/images/frontend/articles/sprite-articles-gallery-button.png') left 4px no-repeat;
+	}
+#thumbNav a.cur
+	{
+	background-position: left 4px;
+	}
+#start-stop
+	{
+	display: none;
+	}
+/*
+	Ad Gallery
+*/
+
+.ad-gallery .ad-image-wrapper .ad-prev .ad-prev-image, .ad-gallery .ad-image-wrapper .ad-next .ad-next-image
+	{
+	display: block!important;
+	width: 28px;
+	height: 58px;
+	background: url('static/images/frontend/gallery/popup-gallery-button-sprite.png') left bottom no-repeat;
+	}
+	.ad-gallery .ad-image-wrapper
+		{
+		height: 516px !important;
+		}
+.ad-gallery .ad-image-wrapper .ad-prev .ad-prev-image
+	{
+	}
+.ad-gallery .ad-image-wrapper .ad-next .ad-next-image
+	{
+	background: url('static/images/frontend/gallery/popup-gallery-button-sprite.png') right top no-repeat;
+	}
+.ad-controls
+	{
+	display: none;
+	}
+.ad-gallery .ad-back 
+	{
+	width: 15px;
+	height: 22px;
+	top: 33%;
+	left: 10px;
+	background: url('static/images/frontend/gallery/popup-gallery-scroll-sprite.png') left bottom no-repeat;
+	}
+.ad-gallery .ad-forward 
+	{
+	width: 15px;
+	height: 22px;
+	top: 33%;
+	right: 10px;
+	background: url('static/images/frontend/gallery/popup-gallery-scroll-sprite.png') left top no-repeat;
+	}
+.ad-gallery .ad-thumbs li a.ad-active img
+	{
+	border: 2px solid #a93101;
+	}
+.ad-gallery .ad-thumbs li a img
+	{
+	border: 2px solid white;
+	}
+.ad-gallery .ad-thumbs li a img:hover
+	{
+	border: 2px solid #cb4b18;
+	}
+.ad-gallery .ad-image-wrapper .ad-image img
+	{
+	}
+.ad-thumbs
+	{
+	height: 92px;
+	width: 808px!important;
+	margin: 0 0 0 38px!important;
+	}
+.ad-gallery .ad-thumbs li
+	{
+	padding-right: 2px;
+	}
+    p.ad-image-description
+        {
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        background: white !important;
+        height: 35px;
+        color: #332a1f;
+        font-size: 15px;
+        font-family: "Times New Roman";
+        }
+		p.ad-image-description span { position: relative; top: 10px; }
+    /* scrim */
+	.scrim
+		{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: url('static/images/frontend/common/scrim.png') left top repeat;
+		text-align: center;
+		z-index: 999;
+		}
+		.scrim-inner
+			{
+			position: relative;
+			width: 980px;
+			margin: 0px auto;
+			}
+			
+			
+			
+			
+.ui-datepicker table
+	{
+	font-size: 1.0em!important;
+	}
+.ui-datepicker .ui-datepicker-header
+		{
+		border-radius: 0;
+		background: white!important;
+		}

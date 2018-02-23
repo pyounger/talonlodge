@@ -1,0 +1,132 @@
+/* Sidebar */
+	.h-content-text-inner-sidebar
+		{
+		margin: 108px 0 0 10px;
+		width: 237px;
+		float: left;
+		}
+		.b-content-text-inner-sidebar-title
+			{
+			border-top: 1px solid black;
+			border-bottom: 1px solid black;
+			padding: 10px 0;
+			width: 230px;
+			margin: 0px auto;
+			font-size: 1.5em;
+			font-weight: bold;
+			line-height: 1.5em;
+			color: #a93102;
+			}
+		.h-content-text-inner-sidebar-quote-wrapper
+			{
+			position: relative;
+			top: 27px;
+			left: -24px;
+			}
+		.b-content-text-inner-sidebar-quote-t
+			{
+			width: 259px;
+			padding: 0 0 0 5px;
+			background: url('static/images/frontend/sidebar/bg-content-sidebar-quote-t.png') left top no-repeat;
+			}
+			.b-content-text-inner-sidebar-quote-b
+				{
+				width: 264px;
+				height: 30px;
+				padding: 0 0 13px 0;
+				margin: 0 0 0 22px;
+				background: url('static/images/frontend/sidebar/bg-content-sidebar-quote-b.png') 2px top no-repeat;
+				}
+				.b-quote-header
+					{
+					margin: 0 0 0 35px;
+					width: 135px;
+					height: 45px;
+					background: transparent url('static/images/frontend/sidebar/bg-content-sidebar-quote-header.png') left top no-repeat;
+					}
+					.facebook .b-quote-header
+						{
+						background-position: left -50px;
+						}
+					.twitter .b-quote-header
+						{
+						background-position: left -95px;
+						}
+				.b-quote-text
+					{
+					margin: 12px 0 5px 0;
+					text-align: center;
+					font-size: 1.4em;
+					line-height: 1.3em;
+					color: #332a1f;
+					}
+				.b-quote-separator
+					{
+					width: 170px;
+					padding: 0 0 15px 30px;
+					background: transparent url('static/images/frontend/sidebar/bg-content-sidebar-quote-separator.png') bottom repeat-x;
+					}
+				.h-quote-link
+					{
+					margin: 15px 0 0 40px;
+					}
+					.h-quote-link a
+						{
+						font-size: 1.4em;
+						font-weight: bold;
+						color: #224d5b;
+						text-decoration: none;
+						}
+						.h-quote-link a:hover
+							{
+							color: #6d4f2b;
+							}
+		.b-content-text-inner-sidebar-image {margin: 45px 0 0 0;}
+		.b-content-text-inner-sidebar-footer
+			{
+			padding: 5px 0 0 0;
+			}
+			.b-content-text-inner-sidebar-footer .b-button em { padding: 5px 10px 0 25px; }
+
+		.review-list
+			{
+			width: 192px;
+			margin: 0px auto;
+			padding: 20px 0 20px 0;
+			}
+			
+        ul.b-reviews-menu
+            {
+            margin: 0;
+            padding: 15px 0 0 12px;
+            list-style: none;
+            overflow: hidden;
+            }
+            ul.b-reviews-menu li
+                {
+                float: left;
+                font: bold 14px "Times New Roman";
+                color: white;
+                }
+                    ul.b-reviews-menu li.separator
+                    {
+                        padding: 0 7px;
+                    }
+                ul.b-reviews-menu li a
+                    {
+                    color: white;
+                    text-decoration: none;
+                    }
+                ul.b-reviews-menu li a.active,
+                ul.b-reviews-menu li a:hover
+                    {
+                    text-decoration: underline;
+                    cursor: pointer;
+                    }
+
+
+					
+h1
+	{
+	color: #a93101!important;
+	}

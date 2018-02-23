@@ -1,0 +1,132 @@
+.cpf-wrap {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+input.error, textarea.error {
+    border-color: rgba(208, 0, 0, 0.8);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(208, 0, 0, 0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(208, 0, 0, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(208, 0, 0, 0.6);
+    outline: 0;
+    outline: thin dotted \9;
+}
+
+.footer {
+    margin-top: 45px;
+    padding: 35px 0 36px;
+    border-top: 1px solid #E5E5E5;
+}
+
+.rights_name {
+    color: gray;
+}
+
+
+.cpf-common-actions {
+    padding: 10px 0 30px 0;
+}
+
+.buttons {
+    padding: 15px 0;
+}
+
+textarea.textarea {
+    height: 100px;
+}
+
+ul.gallery-photos li { cursor: move; }
+ul.gallery-photos li a { cursor: pointer; }
+
+
+/* Page Layouts */
+.page-layout-grid
+    {
+    margin: 30px 0;
+    }
+
+    .page-placeholder
+        {
+        padding: 10px;
+        margin: 10px 0;
+        background: gray;
+        border: 1px solid #DCDCDC;
+        }
+        .page-placeholder .c
+            {
+            overflow: hidden;
+            }
+        .page-placeholder h1
+            {
+            font-size: 18px;
+            line-height: 1.4em;
+            }
+        .page-placeholder h2
+            {
+            font-size: 16px;
+            line-height: 1.4em;
+            }
+        .page-placeholder h3
+            {
+            font-size: 14px;
+            line-height: 1.4em;
+            }
+    .page-element
+        {
+        padding: 10px;
+        margin: 10px 0;
+        background: white;
+        border: 1px solid #DCDCDC;
+        }
+    .page-element-block
+        {
+        clear: both;
+        }
+    .page-element-image
+        {
+        float: left;
+        margin: 0 15px 15px 0;
+        }
+    .page-element-gallery
+        {
+        float: left;
+        margin: 0 15px 15px 0;
+        }
+        .page-element-gallery .i
+            {
+            width: 200px;
+            height: 150px;
+            margin: 10px 0 0 0;
+            position: relative;
+            }
+        .page-element-gallery .i img
+            {
+            border: 1px solid gray;
+            }
+            .page-element-gallery .i .g-1
+                {
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 1;
+                }
+            .page-element-gallery .i .g-2
+                {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                z-index: 2;
+                }
+            .page-element-gallery .i .g-3
+                {
+                position: absolute;
+                left: 20px;
+                top: 20px;
+                z-index: 3;
+                }
+
+textarea.extended
+    {
+    width: 700px;
+    height: 400px;
+    }

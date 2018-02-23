@@ -1,0 +1,74 @@
+.b-privacy-wrapper
+	{
+	overflow: hidden;
+	padding: 0 0 50px 0;
+	}
+	.b-privacy-wrapper h1
+		{
+        color: #1F4C59;
+        font-size: 3.8em;
+        font-family: BalticaPlain;
+        font-weight: normal;
+		}
+	.b-privacy-l, .b-privacy-r
+		{
+		float: left;
+		margin: 8px 0 0 0;
+		width: 475px;
+		font-family: Times;
+		font-size: 1.4em;
+		color: #332a1f;
+		}
+        .b-privacy-wrapper h3
+			{
+            margin: 0 0 20px 0;
+            font-weight: normal;
+            color: #204C59;
+            font-size: 14px
+			}
+        .b-privacy-wrapper h4
+			{
+            margin: 0 0 5px 0;
+            font-weight: bold;
+			color: #204c59;
+			}
+	.b-privacy-r
+		{
+		margin: 8px 0 0 30px;
+		}
+		.b-privacy-l p, .b-privacy-r p
+			{
+			line-height: 1.4em;
+			margin: 0 0 20px 0;
+			}
+		p.definition
+			{
+			margin: 20px 0 0 0;
+			color: #193943;
+			font-size: 1.1em;
+			font-weight: bold;
+			}
+		p.no-margin
+			{
+			margin: 0;
+			}
+		p.last
+			{
+			}
+		.b-privacy-r ul
+			{
+            padding: 0 0 20px 20px;
+			}
+			.b-privacy-r ul li
+				{
+				line-height: 1.4em;
+				}
+		.b-privacy-r ul.b-terms-list
+			{
+			margin: 22px 0 0 15px;
+			list-style: disc inside;
+			}
+			.b-privacy-r ul.b-terms-list li
+				{
+				line-height: 1.4em;
+				}

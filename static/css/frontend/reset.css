@@ -1,0 +1,48 @@
+/*
+	Reset default rules
+*/
+*
+	{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+
+form /* for Opera */
+	{
+	margin: 0;
+	padding: 0;
+	}
+
+input, textarea
+	{
+	outline: none;
+	}
+
+a, a:visited, a:hover
+	{
+	outline: none;
+	}
+
+*:focus
+	{
+	-moz-outline-style: none;
+	}
+
+input::-moz-focus-inner
+	{
+	border: none;
+	}
+
+table
+	{
+	border: 0; /* border="0" */
+	border-collapse: collapse; /* cellspacing="0" */
+	}
+
+table td
+	{
+	padding: 0; /* cellpadding="0" */
+	}
+
+element::-moz-focus-inner{padding:0;border:0}

@@ -1,0 +1,90 @@
+.b-social-buttons
+	{
+	width: 150px;
+	margin: 0 0 0 33px;
+	padding: 30px 0 0 0px;
+	}
+	.b-facebook-wrapper
+		{
+		width: 80px;
+		float: left;
+		}
+	.b-twitter-wrapper
+		{
+		width: 70px;
+		float: left;
+		}
+		.b-twitter-wrapper iframe
+			{
+			width: 80px!important;
+			}
+	.ourstory-social
+		{
+		margin: 0 0 0 77px;
+		}
+
+
+    .error,
+    .error input,
+    .error textarea
+        {
+        color: red !important;
+        }
+
+    .cpf-errors
+        {
+        padding: 30px 0 0 30px;
+        font-size: 14px;
+        }
+
+	table.bordered-table
+		{
+		border-collapse: collapse;
+		table-border: 0;
+		border-spacing: 0;
+		}
+	table.bordered-table tr td
+		{
+		line-height: 0;
+		padding: 0;
+		}
+	table.bordered-table tr td.top-bottom
+		{
+		background: url('static/images/frontend/common/border/sprite-t-b.png') left top repeat-x;
+		}
+	table.bordered-table tr td.left-right
+		{
+		background: url('static/images/frontend/common/border/sprite-l-r.png') left top repeat-y;
+		}
+	table.bordered-table tr td.corners
+		{
+		background: url('static/images/frontend/common/border/sprite-corners.png') left top no-repeat;
+		}
+	table.bordered-table tr td.blt
+		{
+		width: 3px;
+		height: 2px;
+		background-position: left top;
+		}
+	table.bordered-table tr td.bt { background-position: left top; }
+	table.bordered-table tr td.brt 
+		{
+		width: 4px;
+		height: 2px;
+		background-position: right top;
+		}
+	table.bordered-table tr td.bl { background-position: 1px top; }
+	table.bordered-table tr td.br { background-position: right top; }
+	table.bordered-table tr td.blb
+		{
+		width: 3px;
+		height: 5px;
+		background-position: left bottom;
+		}
+	table.bordered-table tr td.bb { background-position: left bottom; }
+	table.bordered-table tr td.brb 
+		{ 
+		width: 4px;
+		height: 5px;
+		background-position: right bottom;
+		}		

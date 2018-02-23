@@ -1,0 +1,4 @@
+[21-Dec-2012 05:42:20] PHP Fatal error:  Call to undefined function  add_action() in /home2/talonlod/public_html/wordpress/wp-content/plugins/akismet/legacy.php on line 356
+[21-Dec-2012 05:42:30] PHP Fatal error:  Call to undefined function  add_action() in /home2/talonlod/public_html/wordpress/wp-content/plugins/akismet/legacy.php on line 356
+[28-May-2013 09:12:17] PHP Fatal error:  Call to undefined function  add_action() in /home2/talonlod/public_html/wordpress/wp-content/plugins/akismet/legacy.php on line 356
+[14-Sep-2013 21:54:12] PHP Fatal error:  Call to undefined function  plugin_dir_url() in /home2/talonlod/public_html/wordpress/wp-content/plugins/akismet/akismet.php on line 32
