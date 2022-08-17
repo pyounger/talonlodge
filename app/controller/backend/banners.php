@@ -16,7 +16,7 @@ class App_Controller_Backend_Banners extends App_Controller_Base_BackendSmart
     {
         $this->load_entities();
     }
-// Pooja Singh
+
     public function action_add()
     {
         $this->entity_add();
