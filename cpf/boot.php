@@ -30,7 +30,15 @@ if (!defined('CPF_ROOT_URL'))
 	/**
 	 * Absolute URL of the site with trailing slash
 	 */	
-	define('CPF_ROOT_URL', sprintf('http://%s/', $_SERVER['HTTP_HOST']));
+	$cpf_scheme = 'http';
+	if ((!empty($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) != 'off')
+		|| (!empty($_SERVER['HTTP_X_FORWARDED_PROTO']) && strtolower($_SERVER['HTTP_X_FORWARDED_PROTO']) == 'https')
+		|| (!empty($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443))
+	{
+		$cpf_scheme = 'https';
+	}
+	define('CPF_ROOT_URL', sprintf('%s://%s/', $cpf_scheme, $_SERVER['HTTP_HOST']));
+	unset($cpf_scheme);
 }
 
 // Include path

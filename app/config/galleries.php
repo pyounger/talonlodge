@@ -72,7 +72,9 @@ $CPF_CONFIG['APP']['PHOTOS']['URLS']['TEMP'] = $CPF_CONFIG['APP']['PHOTOS']['URL
 $CPF_CONFIG['APP']['PHOTOS']['PATHES']['BACKEND'] = CPF_ROOT_DIR . $CPF_CONFIG['APP']['PHOTOS']['URLS']['BACKEND'];
 $CPF_CONFIG['APP']['PHOTOS']['PATHES']['FRONTEND'] = CPF_ROOT_DIR . $CPF_CONFIG['APP']['PHOTOS']['URLS']['FRONTEND'];
 $CPF_CONFIG['APP']['PHOTOS']['PATHES']['TEMP'] = CPF_ROOT_DIR . $CPF_CONFIG['APP']['PHOTOS']['URLS']['TEMP'];
-$CPF_CONFIG['APP']['PHOTOS']['JPEG_QUALITY'] = 100;
+// 82, not 100. Quality 100 disables JPEG quantisation almost entirely and spends
+// roughly 4x the bytes encoding sensor noise rather than visible detail.
+$CPF_CONFIG['APP']['PHOTOS']['JPEG_QUALITY'] = 82;
 
 
 /* Videos */

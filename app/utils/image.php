@@ -31,7 +31,7 @@ class App_Utils_Image
    		return strtolower($parts[count($parts)-1]);
 	}  		  		
 
-	public static function resize_image($file_in, $file_out, $width, $height, $jpeg_quality = 100, $invert_scaling = false, $by_width_only = false, $by_height_only = false)
+	public static function resize_image($file_in, $file_out, $width, $height, $jpeg_quality = 82, $invert_scaling = false, $by_width_only = false, $by_height_only = false)
 	{
 		$width_orig = 0;
 		$height_orig = 0;
@@ -115,7 +115,7 @@ class App_Utils_Image
 		return array('width' => $width, 'height' => $height);
 	}
 	
-	public static function crop($file_in, $file_out, $crop_width, $crop_height, $x, $y, $w, $h, $jpeg_quality = 100)
+	public static function crop($file_in, $file_out, $crop_width, $crop_height, $x, $y, $w, $h, $jpeg_quality = 82)
 	{
 		$width_orig = 0;
 		$height_orig = 0;
@@ -165,7 +165,7 @@ class App_Utils_Image
 		$main_img_obj = imagecreatefromjpeg($from);
 		$watermark_img_obj = imagecreatefrompng($wm);
 		$result = self::create_watermark( $main_img_obj, $watermark_img_obj, $alpha );
-		imagejpeg($result, $from, 100);
+		imagejpeg($result, $from, 82);
 	}
 
 	

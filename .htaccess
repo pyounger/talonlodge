@@ -7,6 +7,43 @@ AddHandler application/x-httpd-phpbeta .php
 # Error documents
 ErrorDocument 403 /403.html
 ErrorDocument 404 /404.html
+
+# Compression. Text formats only - JPEG/PNG/video are already compressed and
+# re-compressing them wastes CPU for no gain. Guarded, so it is a no-op if the
+# module is unavailable.
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+AddOutputFilterByType DEFLATE application/javascript application/x-javascript text/javascript
+AddOutputFilterByType DEFLATE application/json application/xml application/rss+xml
+AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# Cache policy.
+#   Images: derivative filenames carry their dimensions (tl-<id>-799-495.jpg)
+#   and are never rewritten in place, so they are safe to treat as immutable.
+#   CSS/JS: deliberately short. The bundle sets its own far-future Expires via
+#   gzipit.php, but complete-responsive.css and gallery-view.css are unversioned,
+#   so a long TTL here would delay edits to them from reaching visitors.
+#   HTML: explicitly not cached - pages are database-driven and change.
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/webp "access plus 1 year"
+ExpiresByType image/avif "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 year"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresByType font/woff2 "access plus 1 year"
+ExpiresByType font/woff "access plus 1 year"
+ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+ExpiresByType text/css "access plus 1 day"
+ExpiresByType application/javascript "access plus 1 day"
+ExpiresByType text/javascript "access plus 1 day"
+ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+
 
 <IfModule mod_alias.c>
 # Deny access to SVN files if any using mod_alias
@@ -62,7 +99,7 @@ RewriteBase /
 RewriteRule ^captcha\/([0-9]+)/?$ captcha.php [L]
 
 RewriteCond %{HTTP_HOST} !^www.(.*)$
-RewriteRule (.*) http://www.%{HTTP_HOST}%{REQUEST_URI} [R,L]
+RewriteRule (.*) http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 # CSS & JavaScript gzipping using assets
 RewriteRule ^asset-(.*?)\.v(.*?)\.(css|js)$ gzipit.php?asset=$1 [L]
