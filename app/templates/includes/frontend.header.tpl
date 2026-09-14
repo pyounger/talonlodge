@@ -30,7 +30,7 @@
               <ul>
                 <li><a href="https://twitter.com/talonlodge" class="tw" target="_blank"></a></li>
                 <li><a href="https://www.facebook.com/TalonLodge" class="fb" target="_blank"></a></li>
-                <li><a href="http://www.talonlodge.com/blog/" class="wp" target="_blank"></a></li>
+                <li><a href="/blog/" class="wp" target="_blank"></a></li>
               </ul>
             </div>
           </div>
@@ -44,9 +44,9 @@
 
                                     <li><a href="http://wordpress.talonlodge.com/" target="_blank">Blog</a></li>
 
-                                    <li><a href="http://talonlodge.com/rates/">Rates</a></li>
+                                    <li><a href="/rates/">Rates</a></li>
 
-                                    <li><a href="http://talonlodge.com/faq/">Faq</a></li>
+                                    <li><a href="/faq/">Faq</a></li>
 
                                     <li class="last"><a href="#">Contacts</a></li>
 

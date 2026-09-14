@@ -14,7 +14,7 @@
     <h1 class="baltica-plain bb">Online Reservation</h1>
     {/if}
     <div class="btns">
-        <a id = "preve" href = "http://www.talonlodge.com/reservation/?start={$start}&end={$end}&adults={$sessadults}">Previous Page</a>
+        <a id = "preve" href = "/reservation/?start={$start}&end={$end}&adults={$sessadults}">Previous Page</a>
         <a id = "preve" class="b-reservation-view-confirm resrvreq" href="#confirm"">Reservation Request</a>
     </div>
 
@@ -297,7 +297,7 @@
 
             <input type="hidden" name="oid" value="00D300000000HQz">
 
-            <input type="hidden" name="retURL" value="http://www.talonlodge.com/store/ebrochure_thanks.asp">
+            <input type="hidden" name="retURL" value="https://www.talonlodge.com/store/ebrochure_thanks.asp">
           
      <div class="b-brochure-input-r">
         <div class="b-brochure-input-l">

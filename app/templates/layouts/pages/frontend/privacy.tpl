@@ -432,7 +432,7 @@ table.bordered-table tr td {
                     <div class="block">
                         <div class="content_wrap">
                             <div class="img_wrap">
-                                <img src="http://www.dev.talonlodge.com/uploads/photos/frontend/1.jpg">
+                                <img src="/uploads/photos/frontend/1.jpg">
                                 <span class="arrow_wrap 3d_image" data-source="https://my.matterport.com/show/?m=8CkM46J78iy"><a href="javascript:void(0)"><i class="right-arrow"></i></a></span>
                             </div>
                             <div class="content_wrap">
@@ -445,7 +445,7 @@ table.bordered-table tr td {
                     <div class="block">
                         <div class="content_wrap">
                             <div class="img_wrap">
-                                <img src="http://www.dev.talonlodge.com/uploads/photos/frontend/2.jpg">
+                                <img src="/uploads/photos/frontend/2.jpg">
                                 <span class="arrow_wrap 3d_image" data-source="https://my.matterport.com/show/?m=7r83q7Ufn9P"><a href="javascript:void(0)"><i class="right-arrow"></i></a></span>
                             </div>
                             <div class="content_wrap">
@@ -458,7 +458,7 @@ table.bordered-table tr td {
                     <div class="block">
                         <div class="content_wrap">
                             <div class="img_wrap">
-                                <img src="http://www.dev.talonlodge.com/uploads/photos/frontend/3.jpg">
+                                <img src="/uploads/photos/frontend/3.jpg">
                                 <span class="arrow_wrap 3d_image" data-source="https://my.matterport.com/show/?m=EgbkVaKAAqM"><a href="javascript:void(0)"><i class="right-arrow"></i></a></span>
                             </div>
                             <div class="content_wrap">
@@ -471,7 +471,7 @@ table.bordered-table tr td {
                     <div class="block">
                         <div class="content_wrap">
                             <div class="img_wrap">
-                                <img src="http://www.dev.talonlodge.com/uploads/photos/frontend/4.jpg">
+                                <img src="/uploads/photos/frontend/4.jpg">
                                 <span class="arrow_wrap 3d_image" data-source="https://my.matterport.com/show/?m=jQ2j4EMZCH4"><a href="javascript:void(0)"><i class="right-arrow"></i></a></span>
                             </div>
                             <div class="content_wrap">
@@ -488,7 +488,7 @@ table.bordered-table tr td {
                     <div class="block">
                         <div class="content_wrap">
                             <div class="img_wrap">
-                                <img src="http://www.dev.talonlodge.com/uploads/photos/frontend/5.jpg">
+                                <img src="/uploads/photos/frontend/5.jpg">
                                 <span class="arrow_wrap 3d_image" data-source="https://my.matterport.com/show/?m=vUZ1nhGshvB"><a href="javascript:void(0)"><i class="right-arrow"></i></a></span>
                             </div>
                             <div class="content_wrap">
@@ -502,7 +502,7 @@ table.bordered-table tr td {
                     <div class="block">
                         <div class="content_wrap">
                             <div class="img_wrap">
-                                <img src="http://www.dev.talonlodge.com/uploads/photos/frontend/6.jpg">
+                                <img src="/uploads/photos/frontend/6.jpg">
                                 <span class="arrow_wrap 3d_image" data-source="https://my.matterport.com/show/?m=wXhQcWerQ51"><a href="javascript:void(0)"><i class="right-arrow"></i></a></span>
                             </div>
                             <div class="content_wrap">
@@ -516,7 +516,7 @@ table.bordered-table tr td {
                     <div class="block">
                         <div class="content_wrap">
                             <div class="img_wrap">
-                                <img src="http://www.dev.talonlodge.com/uploads/photos/frontend/7.jpg">
+                                <img src="/uploads/photos/frontend/7.jpg">
                                 <span class="arrow_wrap 3d_image" data-source="https://my.matterport.com/show/?m=BLzioRY5imR"><a href="javascript:void(0)"><i class="right-arrow"></i></a></span>
                             </div>
                             <div class="content_wrap">

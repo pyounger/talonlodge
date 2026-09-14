@@ -15,10 +15,10 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
 	<link type="text/css" href="asset-css-frontend.v{$cpf_assets_version}.css" rel="stylesheet"  media="screen" />
     <!-- ..........link for gallery(Parvez)............ -->
-    <link rel="stylesheet" type="text/css" href="http://www.talonlodge.com/static/css/frontend/gallery/gallery-view.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/frontend/gallery/gallery-view.css">
    <!--  <link rel="stylesheet" type="text/css" href="http://www.dev.talonlodge.com/static/css/frontend/gallery/fancy-gallery.css"> -->
-    <script type="text/javascript" src="http://www.talonlodge.com/static/javascript/frontend/fancygallery/galleryjquery.js"></script>
-    <script type="text/javascript" src="http://www.talonlodge.com/static/javascript/frontend/fancygallery/galleryfancy.js"></script>
+    <script type="text/javascript" src="/static/javascript/frontend/fancygallery/galleryjquery.js"></script>
+    <script type="text/javascript" src="/static/javascript/frontend/fancygallery/galleryfancy.js"></script>
     <!-- ...........end gallery css & js............... -->
 	<script type="text/javascript" src="asset-js-frontend.v{$cpf_assets_version}.css"></script>
 	{if $web == "bluffhouse"}<link rel="stylesheet" type="text/css" href="/responsive.css">{/if}
@@ -751,7 +751,7 @@
 
 <script src="static/video/modernizr-2.6.1.min.js"></script>			
 <script src="static/video/main.js"></script>
-<script src="http://www.dev.talonlodge.com/static/video/special.js?v=9"></script>
+<script src="static/video/special.js?v=9"></script>
 <script src="static/video/jqModal.js"></script>
 
 

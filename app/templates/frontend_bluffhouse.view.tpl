@@ -79,7 +79,7 @@
             </div>
         </div>
         <div>
-        <a id = "preve" href = "http://www.dev.talonlodge.com/reservation/">Previous Page</a>
+        <a id = "preve" href = "/reservation/">Previous Page</a>
         </div>
         <div class="b-reservation-view-column b-reservation-view-column-r">
 			<div class="b-reservation-right-top">

@@ -165,7 +165,7 @@
 
                 <li><a href="https://www.facebook.com/TalonLodge" class="fb" target="_blank"></a></li>
 
-                <li><a href="http://www.talonlodge.com/blog/" class="wp" target="_blank"></a></li>
+                <li><a href="/blog/" class="wp" target="_blank"></a></li>
 
             </ul>
 

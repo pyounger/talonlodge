@@ -30,46 +30,46 @@
 			<div class="h-content-navigation-center">
 				<div class="mobile-menu"><i class="fa fa-bars"></i> Menu</div>
 				<ul class="mob-menu-small">
-					<li class="has-mob-sub"><a href="http://www.talonlodge.com/about/">ABOUT US</a><a class="toggle-mob-sub" href="#"><i class="fa fa-caret-down"></i></a>
+					<li class="has-mob-sub"><a href="/about/">ABOUT US</a><a class="toggle-mob-sub" href="#"><i class="fa fa-caret-down"></i></a>
 						<ul class="mob-sub">
-							<li><a href="http://www.talonlodge.com/our-story/">Our History</a></li>
-							<li><a href="http://www.talonlodge.com/location/">Location</a></li>
-							<li><a href="http://www.talonlodge.com/people/">People</a></li>
+							<li><a href="/our-story/">Our History</a></li>
+							<li><a href="/location/">Location</a></li>
+							<li><a href="/people/">People</a></li>
 						</ul>
 					</li>
-					<li class="has-mob-sub"><a href="http://www.talonlodge.com/difference/">DIFFERENCE</a><a class="toggle-mob-sub" href="#"><i class="fa fa-caret-down"></i></a>
+					<li class="has-mob-sub"><a href="/difference/">DIFFERENCE</a><a class="toggle-mob-sub" href="#"><i class="fa fa-caret-down"></i></a>
 						<ul class="mob-sub">
-							<li><a href="http://www.talonlodge.com/talon-service/">Talon Service</a></li>
-							<li><a href="http://www.talonlodge.com/alaska-adventure/">Alaska Adventure</a></li>
-							<li><a href="http://www.talonlodge.com/lodge-accommodations/">Lodge & Accommodation</a></li>
+							<li><a href="/talon-service/">Talon Service</a></li>
+							<li><a href="/alaska-adventure/">Alaska Adventure</a></li>
+							<li><a href="/lodge-accommodations/">Lodge & Accommodation</a></li>
 						</ul>
 					</li>
-					<li class="has-mob-sub"><a href="http://www.talonlodge.com/fishing/">ALASKA FISHING</a><a class="toggle-mob-sub" href="#"><i class="fa fa-caret-down"></i></a>
+					<li class="has-mob-sub"><a href="/fishing/">ALASKA FISHING</a><a class="toggle-mob-sub" href="#"><i class="fa fa-caret-down"></i></a>
 						<ul class="mob-sub">
-							<li><a href="http://www.talonlodge.com/sport-fishing/">Sport Fishing</a></li>
-							<li><a href="http://www.talonlodge.com/freshwater-fishing/">Fresh Water Fishing</a></li>
-							<li><a href="http://www.talonlodge.com/fishing-calendar/">Fishing Calendar</a></li>
-							<li><a href="http://www.talonlodge.com/guides-and-gear/">Guides and Gear</a></li>
+							<li><a href="/sport-fishing/">Sport Fishing</a></li>
+							<li><a href="/freshwater-fishing/">Fresh Water Fishing</a></li>
+							<li><a href="/fishing-calendar/">Fishing Calendar</a></li>
+							<li><a href="/guides-and-gear/">Guides and Gear</a></li>
 						</ul>
 					</li>
-					<li class="has-mob-sub"><a href="http://www.talonlodge.com/cuisine-events/">CUISINE & EVENTS</a><a class="toggle-mob-sub" href="#"><i class="fa fa-caret-down"></i></a>
+					<li class="has-mob-sub"><a href="/cuisine-events/">CUISINE & EVENTS</a><a class="toggle-mob-sub" href="#"><i class="fa fa-caret-down"></i></a>
 						<ul class="mob-sub">
-							<li><a href="http://www.talonlodge.com/chef-series/">Chef Series</a></li>
-							<li><a href="http://www.talonlodge.com/winemaker-series/">Winemaker Series</a></li>
-							<li><a href="http://www.talonlodge.com/recipe-finder/">Recipes</a></li>
+							<li><a href="/chef-series/">Chef Series</a></li>
+							<li><a href="/winemaker-series/">Winemaker Series</a></li>
+							<li><a href="/recipe-finder/">Recipes</a></li>
 						</ul>
 					</li>
-					<li class="has-mob-sub"><a href="http://www.talonlodge.com/spa/">SPA</a><a class="toggle-mob-sub" href="#"><i class="fa fa-caret-down"></i></a>
+					<li class="has-mob-sub"><a href="/spa/">SPA</a><a class="toggle-mob-sub" href="#"><i class="fa fa-caret-down"></i></a>
 						<ul class="mob-sub">
-							<li><a href="http://www.talonlodge.com/alaskas-only-open-air-massage-pavilion/">Alaska's Only Open Air Massage Pavilion</a></li>
-							<li><a href="http://www.talonlodge.com/treatment-menu/">Treatment Menu</a></li>
+							<li><a href="/alaskas-only-open-air-massage-pavilion/">Alaska's Only Open Air Massage Pavilion</a></li>
+							<li><a href="/treatment-menu/">Treatment Menu</a></li>
 						</ul>
 					</li>
-					<li><a href="http://www.talonlodge.com/brochure/">BROCHURE REQUEST</a></li>
-					<li><a href="http://www.talonlodge.com/gallery/">PHOTO GALLERY</a></li>
-					<li><a href="http://www.talonlodge.com/rates/">Rates</a></li>
-					<li><a href="http://www.talonlodge.com/faq/">Faq</a></li>
-					<li><a href="http://www.talonlodge.com/contacts/">Contac Us</a></li>
+					<li><a href="/brochure/">BROCHURE REQUEST</a></li>
+					<li><a href="/gallery/">PHOTO GALLERY</a></li>
+					<li><a href="/rates/">Rates</a></li>
+					<li><a href="/faq/">Faq</a></li>
+					<li><a href="/contacts/">Contac Us</a></li>
 				</ul>
 				<ul class="main-menu-big">
 					{/if}

@@ -14,7 +14,7 @@
 			<td style="width: 600px; margin: 0; padding: 0; line-height: 0;">
 				<table style="border-collapse: collapse; padding: 0; border: 0;" cellpadding="0" cellspacing="0" border="0">
 					<tr>
-						<td style="height: 69px; width: 460px; margin 0; padding: 0; line-height: 0;" width="460"><a href="http://talonlodge.com"><img src="{$cpf_root_url}static/images/mail/logo.png" width="460" height="69" border="0" alt=""/></a></td>
+						<td style="height: 69px; width: 460px; margin 0; padding: 0; line-height: 0;" width="460"><a href="https://talonlodge.com"><img src="{$cpf_root_url}static/images/mail/logo.png" width="460" height="69" border="0" alt=""/></a></td>
 						<td align="center" style="height: 69px; width: 72px; margin 0; padding: 0; line-height: 0;" width="70"><a href="http://twitter.com/talonlodge"><img src="{$cpf_root_url}static/images/mail/twitter.png" width="72" height="69" border="0" alt=""/></a></td>
 						<td style="height: 69px; width: 71px; margin 0; padding: 0; line-height: 0;" width="70"><a href="http://www.facebook.com/TalonLodge?ref=ts"><img src="{$cpf_root_url}static/images/mail/facebook.png" width="68" height="69" border="0" alt=""/></a></td>
 					</tr>

@@ -88,7 +88,7 @@
 
 						<input type="hidden" name="oid" value="00D300000000HQz" />
 
-						<input type="hidden" name="retURL" value="http://www.talonlodge.com/store/ebrochure_thanks.asp" />
+						<input type="hidden" name="retURL" value="https://www.talonlodge.com/store/ebrochure_thanks.asp" />
 
 						<input type="hidden" name="recordType" value="0123000000001TT" />
 

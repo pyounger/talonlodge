@@ -98,8 +98,19 @@ RewriteBase /
 #Captcha
 RewriteRule ^captcha\/([0-9]+)/?$ captcha.php [L]
 
-RewriteCond %{HTTP_HOST} !^www.(.*)$
-RewriteRule (.*) http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+# Force TLS. A certificate is installed, but every redirect here previously
+# targeted http://, so visitors were actively pushed onto plaintext.
+# The X-Forwarded-Proto check matters if a proxy or CDN ever terminates TLS
+# upstream - without it %{HTTPS} reads as off behind one and this loops.
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Canonical host. Kept separate from the rule above rather than folded into
+# it: combining them saves a hop only for http:// non-www entry, and the
+# combined form needs a capture group to avoid producing www.www.
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 # CSS & JavaScript gzipping using assets
 RewriteRule ^asset-(.*?)\.v(.*?)\.(css|js)$ gzipit.php?asset=$1 [L]
@@ -110,7 +121,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 # Optional ignore pattern for file not existing on disk
 RewriteCond %{REQUEST_URI} !generated-file-from-script.gif
 RewriteCond %{REQUEST_URI} !(.*)/$
-RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1/ [L,R=301]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1/ [L,R=301]
 
 # Catch-all rule
 RewriteCond %{REQUEST_FILENAME} !-f
